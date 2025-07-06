@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0063D1;
+  --foreground: #00317E;
+  --border: #001429;
+  --text: #FAFBFA;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--text);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --text: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: var(--foreground);
+  opacity: 80%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  padding: 10px;
+  position: fixed;
+}
+
+header:hover {
+  opacity: 100%;
+}
+
+footer {
+  background: var(--foreground);
+  width: 100%;
+  text-align: center;
+}
+
+/* Text Components */
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color:#e5a7e3;
+}
+
+a:hover {
+  color:#ffdbfe;
+}
+
+/* Animations */
+
+@keyframes slide-from-bottom {
+  0% {display: none; opacity: 0%;}
+  1% {display: inline; opacity: 0%; transform: translateY(40);}
+  100% {opacity: 100%; transform:translateY(0);}
+}
+
+@keyframes grow-5-percent {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.05);}
+}
+
+@keyframes grow-10-percent {
+  0% {transform: scale(1);}
+  100% {transform: scale(1.1);}
+}
+
+/* ClassNames */
+
+.header-space {
+  padding-top: 65px;
+}
+
+/* Containers */
+
+.nav-button-set {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: right;
+}
+
+.project-card-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-card {
+  background: var(--foreground);
+  border: 5px solid var(--border);
+  border-radius: 15px;
+  width: 300px;
+  height: fit-content;
+  padding: 10px;
+}
+
+.project-card:hover {
+  animation-name: grow-5-percent;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.project-card-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  aspect-ratio: 16/9;
+}
+
+.social-link-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 10px;
+  justify-content: center;
+  padding: 20px;
+  animation-name: slide-from-bottom;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+}
+
+.social-link:hover {
+  animation-name: grow-10-percent;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.foreground-section {
+  background: var(--foreground);
+  width: 100%;
+  padding: 10px;
+}
+
+/* Tag Boxes */
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  gap: 6px;
+}
+
+.tag {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 14px;
+  background: black;
+  white-space: pre;
+}
+
+.tag-type {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 14px;
+  background: #C84B4B;
+  white-space: pre;
+}
+
+.tag-role {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 14px;
+  background: #5EC737;
+  white-space: pre;
+}
+
+.tag-tool {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 14px;
+  background: #DF19E7;
+  white-space: pre;
+}
+
+.tag-language {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 8px;
+  width: fit-content;
+  font-size: 14px;
+  background: #5470DE;
+  white-space: pre;
+}
+
+/* Style */
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.flex-div {
+  display: flex;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-content-center {
+  align-content: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
