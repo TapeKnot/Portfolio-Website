@@ -10,9 +10,9 @@ export default function Footer() {
         <br/>
       </div>
       <div className="social-link-container">
-        <a href="mailto:benjaminlevy.bel@gmail.com" target="_blank"><img className="social-link" src='/email-white.png' alt="email" width={50} height={50}/></a>
-        <a href="https://www.linkedin.com/in/levybe/" target="_blank"><img className="social-link" src='/email-white.png' alt="linkedin" width={50} height={50}/></a>
-        <a href="https://github.com/TapeKnot" target="_blank"><img className="social-link" src='/email-white.png' alt="github" width={50} height={50}/></a>
+        <a href="mailto:benjaminlevy.bel@gmail.com" target="_blank"><img className="social-link" src='/email-logo.png' alt="email" width={50} height={50}/></a>
+        <a href="https://www.linkedin.com/in/levybe/" target="_blank"><img className="social-link" src='/linkedin-logo.png' alt="linkedin" width={50} height={50}/></a>
+        <a href="https://github.com/TapeKnot" target="_blank"><img className="social-link" src='/github-logo.png' alt="github" width={50} height={50}/></a>
       </div>
     </footer>
   )
