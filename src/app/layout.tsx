@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./header";
+import Footer from "./footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,26 +17,31 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Benjamin Levy - Portfolio",
   description: "Take a look at my projects!",
+  icons: {
+    icon: [
+      {url: '/favicon/favicon-96x96.png', type: 'image/png', sizes: '96x96'},
+      {url: '/favicon/favicon.svg', type: 'image/svg+xml'},
+    ],
+    shortcut: ['/favicon/favicon.ico'],
+    apple: [
+      {url: '/favicon/apple-touch-icon.png', sizes: '180x180'},
+    ],
+    other: [
+      {rel: 'manifest', url: '/favicon/site.webmanifest'},
+    ],
+  },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-        <link rel="manifest" href="/favicon/site.webmanifest" />
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header/>
+        <div className="header-space"/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

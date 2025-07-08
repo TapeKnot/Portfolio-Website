@@ -1,14 +1,7 @@
-import Image from "next/image";
-import Header from "./header";
-import Footer from "./footer";
-//import ProjectBox from "./project-box";
-
 export default function Home() {
   return (
     <div>
-      <Header/>
       <main>
-        <div className="header-space"/>
         <div className="foreground-section">
           <h1 className="text-align-center">Benjamin Levy</h1>
           <h2 className="text-align-center">Software Engineer & Game Programmer</h2>
@@ -66,7 +59,6 @@ export default function Home() {
         <a href="" className="text-align-center"><h2>See More Projects!</h2></a>
         <br/>
       </main>
-      <Footer/>
     </div>
   );
 }
