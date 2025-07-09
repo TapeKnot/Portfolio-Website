@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Header() {
   return (
     <header>
@@ -5,9 +7,9 @@ export default function Header() {
         <h2>Benjamin Levy</h2>
       </div>
       <div className="nav-button-set">
-        <button type="button">Home</button>
-        <button type="button">Projects</button>
-        <button type="button">About</button>
+        <Link href="/">Home</Link>
+        <Link href="/projects">Projects</Link>
+        <Link href="/about">About</Link>
         <a href="/Benjamin-Levy-Resume.pdf" target="_blank">Resume</a>
       </div>
     </header>

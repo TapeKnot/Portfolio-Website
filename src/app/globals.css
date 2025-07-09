@@ -96,11 +96,19 @@ a:hover {
 
 /* ClassNames */
 
+/* Generic */
+
+.foreground-section {
+  background: var(--foreground);
+  width: 100%;
+  padding: 10px;
+}
+
+/* Header */
+
 .header-space {
   padding-top: 65px;
 }
-
-/* Containers */
 
 .nav-button-set {
   display: grid;
@@ -108,6 +116,8 @@ a:hover {
   grid-column-gap: 20px;
   justify-content: right;
 }
+
+/* Projects */
 
 .project-card-container {
   display: grid;
@@ -142,6 +152,8 @@ a:hover {
   aspect-ratio: 16/9;
 }
 
+/* Social Links */
+
 .social-link-container {
   display: grid;
   grid-auto-flow: column;
@@ -158,12 +170,6 @@ a:hover {
   animation-duration: 0.1s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
-}
-
-.foreground-section {
-  background: var(--foreground);
-  width: 100%;
-  padding: 10px;
 }
 
 /* Tag Boxes */
@@ -225,6 +231,50 @@ a:hover {
   white-space: pre;
 }
 
+/* About Me */
+
+.about-me-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-img {
+  border-radius: 20px;
+  width: 400px;
+  aspect-ratio: 1 / 1;
+}
+
+.about-me-text {
+  max-width: 400px;
+  text-align: left;
+}
+
+.skills-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.resume-buttons-container {
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.resume-container {
+  padding: 20px;
+}
+
 /* Style */
 
 .text-align-center {
@@ -249,4 +299,8 @@ a:hover {
 
 .justify-content-center {
   justify-content: center;
+}
+
+.margin-auto {
+  margin: auto;
 }

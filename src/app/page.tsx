@@ -1,4 +1,6 @@
-export default function Home() {
+import Link from 'next/link'
+
+export default function Page() {
   return (
     <div>
       <main>
