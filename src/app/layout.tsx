@@ -40,7 +40,11 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       >
         <Header/>
         <div className="header-space"/>
-        {children}
+        <div className="row">
+          <div className="edge-column"/>
+          <div className="middle-column">{children}</div>
+          <div className="edge-column"/>
+        </div>
         <Footer/>
       </body>
     </html>

@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <div>
-        <h2>Benjamin Levy</h2>
+        <h2 className="text-italic">Benjamin Levy</h2>
       </div>
       <div className="nav-button-set">
         <Link href="/">Home</Link>

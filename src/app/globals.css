@@ -2,7 +2,11 @@
 
 :root {
   --background: #0063D1;
+  --section-header: #050062;
+  --project-card: #006CE0;
+  --project-card-border: #0059B8;
   --foreground: #00317E;
+  --foreground-border: #002752;
   --border: #001429;
   --text: #FAFBFA;
 }
@@ -45,6 +49,7 @@ footer {
   background: var(--foreground);
   width: 100%;
   text-align: center;
+  margin-top: 20px;
 }
 
 /* Text Components */
@@ -96,12 +101,53 @@ a:hover {
 
 /* ClassNames */
 
+/* Three-column Format */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.edge-column {
+  width: 15%;
+  height: 1px;
+  float: left;
+}
+
+.middle-column {
+  width: 70%;
+  height: fit-content;
+  float: left;
+}
+
 /* Generic */
+
+hr {
+  width: 100%;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+
+.section-header {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: auto;
+}
 
 .foreground-section {
   background: var(--foreground);
-  width: 100%;
-  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
+  border: 10px solid var(--foreground-border);
+  border-radius: 20px;
 }
 
 /* Header */
@@ -124,12 +170,11 @@ a:hover {
   grid-auto-flow: column;
   grid-column-gap: 20px;
   justify-content: center;
-  padding: 20px;
 }
 
 .project-card {
-  background: var(--foreground);
-  border: 5px solid var(--border);
+  background: var(--project-card);
+  border: 5px solid var(--project-card-border);
   border-radius: 15px;
   width: 300px;
   height: fit-content;
@@ -239,7 +284,6 @@ a:hover {
   grid-column-gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .profile-img {
@@ -259,7 +303,6 @@ a:hover {
   grid-column-gap: 20px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
 .resume-buttons-container {
@@ -303,4 +346,12 @@ a:hover {
 
 .margin-auto {
   margin: auto;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-italic {
+  font-style: italic;
 }
