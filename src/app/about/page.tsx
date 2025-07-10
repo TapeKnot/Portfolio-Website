@@ -1,4 +1,4 @@
-export default function Home() {
+export default function Page() {
   return (
     <div>
       <main>
@@ -18,7 +18,7 @@ export default function Home() {
             </p>
           </div>
           <div className="section-header">
-            <h1 className="text-align-center">Skills & Technologies</h1>
+            <h2 className="text-align-center">Skills & Technologies</h2>
             <hr/>
           </div>
           <div className="skills-container">
@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </div>
           <div className="section-header">
-            <h1 className="text-align-center">Resume</h1>
+            <h2 className="text-align-center">Resume</h2>
             <hr/>
           </div>
           <div className="resume-buttons-container">

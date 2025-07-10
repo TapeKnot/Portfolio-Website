@@ -14,6 +14,17 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+var balloonSpawnInterval = 1000;
+
+function SpawnBalloon() {
+  
+}
+
+window.onload = function() {
+  setInterval(SpawnBalloon, balloonSpawnInterval);
+  return;
+}
+
 export const metadata: Metadata = {
   title: "Benjamin Levy - Portfolio",
   description: "Take a look at my projects!",
@@ -40,11 +51,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       >
         <Header/>
         <div className="header-space"/>
-        <div className="row">
-          <div className="edge-column"/>
-          <div className="middle-column">{children}</div>
-          <div className="edge-column"/>
-        </div>
+        <div className="middle-column">{children}</div>
         <Footer/>
       </body>
     </html>

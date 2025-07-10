@@ -37,6 +37,7 @@ header {
   width: 100%;
   display: grid;
   grid-auto-flow: column;
+  align-items: center;
   padding: 10px;
   position: fixed;
 }
@@ -103,22 +104,11 @@ a:hover {
 
 /* Three-column Format */
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.edge-column {
-  width: 15%;
-  height: 1px;
-  float: left;
-}
 
 .middle-column {
   width: 70%;
   height: fit-content;
-  float: left;
+  margin: auto;
 }
 
 /* Generic */
@@ -354,4 +344,8 @@ hr {
 
 .text-italic {
   font-style: italic;
+}
+
+.width-fit-content {
+  width: fit-content;
 }

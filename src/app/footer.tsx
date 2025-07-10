@@ -4,7 +4,11 @@ export default function Footer() {
   return (
     <footer>
       <div>
-        <h2>Contact Me</h2>
+        <div className="width-fit-content margin-auto">
+          <br/>
+          <h2>Contact Me</h2>
+          <hr/>
+        </div>
         <br/>
         <p>You can send me a message at<br/> <a href="mailto:benjaminlevy.bel@gmail.com">benjaminlevy.bel@gmail.com</a>.</p>
         <br/>

@@ -5,14 +5,8 @@ export default function Page() {
     <div>
       <main>
         <div className="section-header">
-          <h1 className="text-align-center">Benjamin Levy</h1>
-          <h2 className="text-align-center">Software Engineer & Game Programmer</h2>
+          <h1 className="text-align-center">Projects</h1>
           <hr/>
-          <p className="text-align-center">
-            Hi!
-            Welcome to my website, created from scratch using React.<br/>
-            Here, you can find some of the projects I have worked on as well as my resume.
-          </p>
         </div>
         <div className="foreground-section">
           <div className="project-card-container">
@@ -60,7 +54,35 @@ export default function Page() {
             </div>
           </div>
           <br/>
-          <Link href="/projects"><h2 className="text-underline text-align-center">See More Projects!</h2></Link>
+          <div className="project-card-container">
+            <div className="project-card">
+              <a href="https://tapeknot.itch.io/kooky-kritters" target="_blank">
+                <img className="project-card-img" src='/kooky-kritters.png' alt="kooky-kritters"/>
+              </a>
+              <div className="tag-container">
+                  <div className="tag-type">Game</div>
+                  <div className="tag-role">Programming</div>
+                  <div className="tag-role">Design</div>
+                  <div className="tag-role">Art</div>
+                  <div className="tag-tool">Unity</div>
+                  <div className="tag-language">C#</div>
+              </div>
+              <p>Developed a puzzle game where you guide a will-o-wisp through a pumpkin patch with the help of Kooky Kritters.</p>
+            </div>
+            <div className="project-card">
+              <a href="https://mantisstudios.itch.io/grabby-gremlins" target="_blank">
+                <img className="project-card-img" src='/grabby-gremlins.png' alt="grabby-gremlins"/>
+              </a>
+              <div className="tag-container">
+                  <div className="tag-type">Game</div>
+                  <div className="tag-role">Programming</div>
+                  <div className="tag-role">Design</div>
+                  <div className="tag-tool">Unity</div>
+                  <div className="tag-language">C#</div>
+              </div>
+              <p>Developed a tower defense game featuring top-down shooter combat and resource management.</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
