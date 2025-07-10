@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 var balloonSpawnInterval = 1000;
 
 function SpawnBalloon() {
-  
+
 }
 
-window.onload = function() {
-  setInterval(SpawnBalloon, balloonSpawnInterval);
-  return;
-}
+// window.onload = function() {
+//   setInterval(SpawnBalloon, balloonSpawnInterval);
+//   return;
+// }
 
 export const metadata: Metadata = {
   title: "Benjamin Levy - Portfolio",
