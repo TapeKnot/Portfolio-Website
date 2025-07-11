@@ -1,5 +1,8 @@
 import Link from 'next/link'
-import Image from "next/image";
+import Image from 'next/image';
+import travellingWithTaste from '../../public/projects/travelling-with-taste.png'
+import bippits from '../../public/projects/bippits.png'
+import tables4u from '../../public/projects/tables4u.png'
 
 export default function Page() {
   return (
@@ -19,7 +22,7 @@ export default function Page() {
           <div className="project-card-container">
             <div className="project-card">
               <a href="https://ratgoosesuitstudios.github.io/" target="_blank">
-                <Image className="project-card-img" src='/projects/travelling-with-taste.png' alt="travelling-with-taste"/>
+                <Image className="project-card-img" src={travellingWithTaste} alt="travelling-with-taste"/>
               </a>
               <div className="tag-container">
                   <div className="tag-type">Game</div>
@@ -34,7 +37,7 @@ export default function Page() {
             </div>
             <div className="project-card">
               <a href="https://tapeknot.itch.io/bippits" target="_blank">
-                <Image className="project-card-img" src='/projects/bippits.png' alt="bippits"/>
+                <Image className="project-card-img" src={bippits} alt="bippits"/>
               </a>
               <div className="tag-container">
                   <div className="tag-type">Game</div>
@@ -46,7 +49,7 @@ export default function Page() {
             </div>
             <div className="project-card">
               <a href="https://github.com/TapeKnot" target="_blank">
-                <Image className="project-card-img" src='/projects/tables4u.png' alt="tables4u"/>
+                <Image className="project-card-img" src={tables4u} alt="tables4u"/>
               </a>
               <div className="tag-container">
                   <div className="tag-type">Website</div>
