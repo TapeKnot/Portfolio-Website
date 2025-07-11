@@ -293,6 +293,11 @@ hr {
   grid-column-gap: 20px;
   justify-content: center;
   align-items: center;
+  padding: 20px;
+}
+
+.skill-img {
+  height: 100px;
 }
 
 .resume-buttons-container {

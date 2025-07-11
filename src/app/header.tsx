@@ -5,10 +5,10 @@ export default function Header() {
     <header>
       <h2 className="text-italic">Benjamin Levy</h2>
       <div className="nav-button-set">
-        <Link href="/"><h3>Home</h3></Link>
-        <Link href="/projects"><h3>Projects</h3></Link>
-        <Link href="/about"><h3>About</h3></Link>
-        <a href="/Benjamin-Levy-Resume.pdf" target="_blank"><h3>Resume</h3></a>
+        <Link className="text-bold" href="/">Home</Link>
+        <Link className="text-bold" href="/projects">Projects</Link>
+        <Link className="text-bold" href="/about">About</Link>
+        <a className="text-bold" href="/Benjamin-Levy-Resume.pdf" target="_blank">Resume</a>
       </div>
     </header>
   );

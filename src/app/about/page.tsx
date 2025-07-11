@@ -22,44 +22,25 @@ export default function Page() {
             <hr/>
           </div>
           <div className="skills-container">
-            <div>
-              <b>Programming/Scripting Languages</b>
-              <ul>
-                <li>- Javascript / Typescript</li>
-                <li>- HTML</li>
-                <li>- CSS</li>
-                <li>- C / C++</li>
-                <li>- C#</li>
-                <li>- Java</li>
-                <li>- SQL</li>
-                <li>- Assembly</li>
-              </ul>
-            </div>
-            <div>
-              <b>Libraries & Frameworks</b>
-              <ul>
-                <li>- React</li>
-                <li>- Node.js</li>
-                <li>- Next.js</li>
-              </ul>
-            </div>
-            <div>
-              <b>Engines</b>
-              <ul>
-                <li>- Unreal</li>
-                <li>- Unity</li>
-                <li>- Godot</li>
-              </ul>
-            </div>
-            <div>
-              <b>Tools</b>
-              <ul>
-                <li>- Jira</li>
-                <li>- WebGL</li>
-                <li>- Amazon Web Services</li>
-                <li>- Git</li>
-              </ul>
-            </div>
+            <img className="skill-img" src='/skills-technologies/colored/js.svg' alt="Javascript"/>
+            <img className="skill-img" src='/skills-technologies/colored/ts.svg' alt="Typescript"/>
+            <img className="skill-img" src='/skills-technologies/colored/HTML5.svg' alt="HTML5"/>
+            <img className="skill-img" src='/skills-technologies/colored/css.png' alt="CSS"/>
+            <img className="skill-img" src='/skills-technologies/colored/c.svg' alt="C"/>
+            <img className="skill-img" src='/skills-technologies/colored/cpp.svg' alt="C++"/>
+            <img className="skill-img" src='/skills-technologies/colored/c-sharp.svg' alt="C#"/>
+            <img className="skill-img" src='/skills-technologies/colored/java.svg' alt="Java"/>
+            <img className="skill-img" src='/skills-technologies/colored/sql.svg' alt="SQL"/>
+          </div>
+          <div className="skills-container">
+            <img className="skill-img" src='/skills-technologies/colored/react.svg' alt="React"/>
+            <img className="skill-img" src='/skills-technologies/colored/node.js.svg' alt="Node.js"/>
+            <img className="skill-img" src='/skills-technologies/colored/next.js.svg' alt="Next.js"/>
+          </div>
+          <div className="skills-container">
+            <img className="skill-img" src='/skills-technologies/colored/unreal-vertical.svg' alt="Unreal"/>
+            <img className="skill-img" src='/skills-technologies/colored/unity.png' alt="Unity"/>
+            <img className="skill-img" src='/skills-technologies/colored/godot-vertical.svg' alt="Godot"/>
           </div>
           <div className="section-header">
             <h2 className="text-align-center">Resume</h2>
@@ -71,7 +52,7 @@ export default function Page() {
             <a>LinkedIn</a>
           </div>
           <div className="resume-container">
-            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="550px" height="1480px"/>
+            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1480px"/>
           </div>
         </div>
       </main>
