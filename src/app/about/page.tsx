@@ -25,7 +25,7 @@ export default function Page() {
           <hr/>
         </div>
         <div className="foreground-section">
-          <div className="about-me-container">
+          <div className="hv-centered-grid-section">
             <Image className="profile-img" src={benjaminLevy} alt="benjamin-levy"/>
             <p className="about-me-text">
               Hi there!
@@ -39,7 +39,7 @@ export default function Page() {
             <h2 className="text-align-center">Skills & Technologies</h2>
             <hr/>
           </div>
-          <div className="skills-container">
+          <div className="hv-centered-grid-section">
             <Image className="skill-img" src={js} alt="Javascript"/>
             <Image className="skill-img" src={ts} alt="Typescript"/>
             <Image className="skill-img" src={html} alt="HTML5"/>
@@ -50,12 +50,12 @@ export default function Page() {
             <Image className="skill-img" src={java} alt="Java"/>
             <Image className="skill-img" src={sql} alt="SQL"/>
           </div>
-          <div className="skills-container">
+          <div className="hv-centered-grid-section">
             <Image className="skill-img" src={react} alt="React"/>
             <Image className="skill-img" src={nodejs} alt="Node.js"/>
             <Image className="skill-img" src={nextjs} alt="Next.js"/>
           </div>
-          <div className="skills-container">
+          <div className="hv-centered-grid-section">
             <Image className="skill-img" src={unreal} alt="Unreal"/>
             <Image className="skill-img" src={unity} alt="Unity"/>
             <Image className="skill-img" src={godot} alt="Godot"/>
@@ -64,12 +64,12 @@ export default function Page() {
             <h2 className="text-align-center">Resume</h2>
             <hr/>
           </div>
-          <div className="resume-buttons-container">
+          <div className="hv-centered-grid-section">
             <a>Download</a>
             <a>Open in New Tab</a>
             <a>LinkedIn</a>
           </div>
-          <div className="resume-container">
+          <div className="padding-20px">
             <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1480px"/>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import Image from "next/image";
 import travellingWithTaste from '../../../public/projects/travelling-with-taste.png'
 import bippits from '../../../public/projects/bippits.png'
@@ -14,11 +15,11 @@ export default function Page() {
           <hr/>
         </div>
         <div className="foreground-section">
-          <div className="project-card-container">
+          <div className="h-centered-grid-section">
             <div className="project-card">
-              <a href="https://ratgoosesuitstudios.github.io/" target="_blank">
+              <Link href="/projects/travelling-with-taste">
                 <Image className="project-card-img" src={travellingWithTaste} alt="travelling-with-taste"/>
-              </a>
+              </Link>
               <div className="tag-container">
                   <div className="tag-type">Game</div>
                   <div className="tag-role">Programming</div>
@@ -31,9 +32,9 @@ export default function Page() {
               <p>Developed a 3D goofy stealth game about rats stealing from cheese-trafficking airport security.</p>
             </div>
             <div className="project-card">
-              <a href="https://tapeknot.itch.io/bippits" target="_blank">
+              <Link href="/projects/ascii-engine-game">
                 <Image className="project-card-img" src={bippits} alt="bippits"/>
-              </a>
+              </Link>
               <div className="tag-container">
                   <div className="tag-type">Game</div>
                   <div className="tag-type">Engine</div>
@@ -43,9 +44,9 @@ export default function Page() {
               <p>Recreated the ASCII art game engine Dragonfly and developed a tricky block-stacking game with the engine.</p>
             </div>
             <div className="project-card">
-              <a href="https://github.com/TapeKnot" target="_blank">
+              <Link href="/projects/tables4u">
                 <Image className="project-card-img" src={tables4u} alt="tables4u"/>
-              </a>
+              </Link>
               <div className="tag-container">
                   <div className="tag-type">Website</div>
                   <div className="tag-role">Programming</div>
@@ -59,7 +60,7 @@ export default function Page() {
             </div>
           </div>
           <br/>
-          <div className="project-card-container">
+          <div className="h-centered-grid-section">
             <div className="project-card">
               <a href="https://tapeknot.itch.io/kooky-kritters" target="_blank">
                 <Image className="project-card-img" src={kookyKritters} alt="kooky-kritters"/>

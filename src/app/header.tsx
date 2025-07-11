@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <header>
       <h2 className="text-italic">Benjamin Levy</h2>
-      <div className="nav-button-set">
+      <div className="h-right-grid-section">
         <Link className="text-bold" href="/">Home</Link>
         <Link className="text-bold" href="/projects">Projects</Link>
         <Link className="text-bold" href="/about">About</Link>
