@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-var balloonSpawnInterval = 1000;
+// let balloonSpawnInterval = 1000;
 
-function SpawnBalloon() {
+// function SpawnBalloon() {
 
-}
+// }
 
 // window.onload = function() {
 //   setInterval(SpawnBalloon, balloonSpawnInterval);

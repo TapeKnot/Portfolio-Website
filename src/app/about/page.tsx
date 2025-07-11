@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Page() {
   return (
     <div>
@@ -8,7 +10,7 @@ export default function Page() {
         </div>
         <div className="foreground-section">
           <div className="about-me-container">
-            <img className="profile-img" src='benjamin-levy.JPEG' alt="benjamin-levy"/>
+            <Image className="profile-img" src='benjamin-levy.JPEG' alt="benjamin-levy"/>
             <p className="about-me-text">
               Hi there!
               I am Benjamin Levy, a passionate software engineer and game programmer.
@@ -22,25 +24,25 @@ export default function Page() {
             <hr/>
           </div>
           <div className="skills-container">
-            <img className="skill-img" src='/skills-technologies/colored/js.svg' alt="Javascript"/>
-            <img className="skill-img" src='/skills-technologies/colored/ts.svg' alt="Typescript"/>
-            <img className="skill-img" src='/skills-technologies/colored/HTML5.svg' alt="HTML5"/>
-            <img className="skill-img" src='/skills-technologies/colored/css.png' alt="CSS"/>
-            <img className="skill-img" src='/skills-technologies/colored/c.svg' alt="C"/>
-            <img className="skill-img" src='/skills-technologies/colored/cpp.svg' alt="C++"/>
-            <img className="skill-img" src='/skills-technologies/colored/c-sharp.svg' alt="C#"/>
-            <img className="skill-img" src='/skills-technologies/colored/java.svg' alt="Java"/>
-            <img className="skill-img" src='/skills-technologies/colored/sql.svg' alt="SQL"/>
+            <Image className="skill-img" src='/skills-technologies/colored/js.svg' alt="Javascript"/>
+            <Image className="skill-img" src='/skills-technologies/colored/ts.svg' alt="Typescript"/>
+            <Image className="skill-img" src='/skills-technologies/colored/HTML5.svg' alt="HTML5"/>
+            <Image className="skill-img" src='/skills-technologies/colored/css.png' alt="CSS"/>
+            <Image className="skill-img" src='/skills-technologies/colored/c.svg' alt="C"/>
+            <Image className="skill-img" src='/skills-technologies/colored/cpp.svg' alt="C++"/>
+            <Image className="skill-img" src='/skills-technologies/colored/c-sharp.svg' alt="C#"/>
+            <Image className="skill-img" src='/skills-technologies/colored/java.svg' alt="Java"/>
+            <Image className="skill-img" src='/skills-technologies/colored/sql.svg' alt="SQL"/>
           </div>
           <div className="skills-container">
-            <img className="skill-img" src='/skills-technologies/colored/react.svg' alt="React"/>
-            <img className="skill-img" src='/skills-technologies/colored/node.js.svg' alt="Node.js"/>
-            <img className="skill-img" src='/skills-technologies/colored/next.js.svg' alt="Next.js"/>
+            <Image className="skill-img" src='/skills-technologies/colored/react.svg' alt="React"/>
+            <Image className="skill-img" src='/skills-technologies/colored/node.js.svg' alt="Node.js"/>
+            <Image className="skill-img" src='/skills-technologies/colored/next.js.svg' alt="Next.js"/>
           </div>
           <div className="skills-container">
-            <img className="skill-img" src='/skills-technologies/colored/unreal-vertical.svg' alt="Unreal"/>
-            <img className="skill-img" src='/skills-technologies/colored/unity.png' alt="Unity"/>
-            <img className="skill-img" src='/skills-technologies/colored/godot-vertical.svg' alt="Godot"/>
+            <Image className="skill-img" src='/skills-technologies/colored/unreal-vertical.svg' alt="Unreal"/>
+            <Image className="skill-img" src='/skills-technologies/colored/unity.png' alt="Unity"/>
+            <Image className="skill-img" src='/skills-technologies/colored/godot-vertical.svg' alt="Godot"/>
           </div>
           <div className="section-header">
             <h2 className="text-align-center">Resume</h2>
