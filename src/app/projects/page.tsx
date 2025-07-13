@@ -3,8 +3,8 @@ import Image from "next/image";
 import travellingWithTaste from '../../../public/projects/travelling-with-taste.png'
 import bippits from '../../../public/projects/bippits.png'
 import tables4u from '../../../public/projects/tables4u.png'
-import kookyKritters from '../../../public/projects/kooky-kritters.png'
-import grabbyGremlins from '../../../public/projects/grabby-gremlins.png'
+import kookyKritters from '../../../public/projects/kooky-kritters/logo.png'
+import grabbyGremlins from '../../../public/projects/grabby-gremlins/logo.png'
 
 export default function Page() {
   return (
@@ -62,9 +62,9 @@ export default function Page() {
           <br/>
           <div className="h-centered-grid-section">
             <div className="project-card">
-              <a href="https://tapeknot.itch.io/kooky-kritters" target="_blank">
+              <Link href="/projects/kooky-kritters">
                 <Image className="project-card-img" src={kookyKritters} alt="kooky-kritters"/>
-              </a>
+              </Link>
               <div className="tag-container">
                   <div className="tag-type">Game</div>
                   <div className="tag-role">Programming</div>
@@ -76,9 +76,9 @@ export default function Page() {
               <p>Developed a puzzle game where you guide a will-o-wisp through a pumpkin patch with the help of Kooky Kritters.</p>
             </div>
             <div className="project-card">
-              <a href="https://mantisstudios.itch.io/grabby-gremlins" target="_blank">
+              <Link href="/projects/grabby-gremlins">
                 <Image className="project-card-img" src={grabbyGremlins} alt="grabby-gremlins"/>
-              </a>
+              </Link>
               <div className="tag-container">
                   <div className="tag-type">Game</div>
                   <div className="tag-role">Programming</div>

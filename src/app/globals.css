@@ -7,8 +7,9 @@
   --project-card-border: #0059B8;
   --foreground: #00317E;
   --foreground-border: #002752;
-  --border: #001429;
+  --border: #001c29;
   --text: #FAFBFA;
+  --header: #b5b5b5;
 }
 
 @theme inline {
@@ -32,7 +33,7 @@ body {
 }
 
 header {
-  background: var(--foreground);
+  background: var(--header);
   opacity: 80%;
   width: 100%;
   display: grid;
@@ -196,6 +197,11 @@ hr {
   border-radius: 15px;
   margin-bottom: 10px;
   aspect-ratio: 16/9;
+}
+
+.project-page-img {
+  margin: auto;
+  width: 600px;
 }
 
 /* Social Links */

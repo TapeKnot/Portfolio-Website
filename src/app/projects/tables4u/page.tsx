@@ -1,3 +1,6 @@
+import Image from "next/image";
+import logo from '../../../../public/projects/tables4u.png'
+
 export default function Page() {
   return (
     <div>
@@ -21,6 +24,7 @@ export default function Page() {
               <b>Tools: </b>React, Node.js, Next.js, Git<br/>
             </p>
           </div>
+          <Image className="project-page-img" src={logo} alt="logo"/>
           <p>
 
           </p>
