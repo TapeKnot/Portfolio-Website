@@ -50,7 +50,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
-        <div className="header-space"/>
         <div className="middle-column">{children}</div>
         <Footer/>
       </body>
