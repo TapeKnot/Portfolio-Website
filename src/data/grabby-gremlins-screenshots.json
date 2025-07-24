@@ -1,0 +1,20 @@
+{
+    "slides": [
+        {
+            "src": "https://www.youtube.com/embed/bVZZPUvZUv0",
+            "alt": "Image 1"
+        },
+        {
+            "src": "/projects/grabby-gremlins/screenshot-1.png",
+            "alt": "Image 2"
+        },
+        {
+            "src": "/projects/grabby-gremlins/screenshot-2.png",
+            "alt": "Image 3"
+        },
+        {
+            "src": "/projects/grabby-gremlins/screenshot-3.png",
+            "alt": "Image 4"
+        }
+    ]
+}

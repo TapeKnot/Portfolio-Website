@@ -2,6 +2,8 @@ import Image from "next/image";
 import screenshot1 from '../../../../public/projects/grabby-gremlins/screenshot-1.png'
 import screenshot2 from '../../../../public/projects/grabby-gremlins/screenshot-2.png'
 import screenshot3 from '../../../../public/projects/grabby-gremlins/screenshot-3.png'
+import { Slideshow } from '../../../components/slideshow'
+import { slides } from '../../../data/grabby-gremlins-screenshots.json'
 
 export default function Page() {
   return (
@@ -33,13 +35,14 @@ export default function Page() {
             <h2 className="text-align-center">Screenshots</h2>
             <hr/>
           </div>
-          <div>
+          <Slideshow data={slides}/>
+          {/* <div>
             <Image className="project-page-img" src={screenshot1} alt="screenshot-1"/>
             <br/>
             <Image className="project-page-img" src={screenshot2} alt="screenshot-2"/>
             <br/>
             <Image className="project-page-img" src={screenshot3} alt="screenshot-3"/>
-          </div>
+          </div> */}
           <p>
 
           </p>
