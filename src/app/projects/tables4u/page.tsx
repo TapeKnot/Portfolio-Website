@@ -1,5 +1,5 @@
-import Image from "next/image";
-import logo from '../../../../public/projects/tables4u.png'
+import { Slideshow } from '../../../components/slideshow/slideshow'
+import { slides } from '../../../data/tables4u-data.json'
 
 export default function Page() {
   return (
@@ -24,7 +24,7 @@ export default function Page() {
               <b>Tools: </b>React, Node.js, Next.js, Git<br/>
             </p>
           </div>
-          <Image className="project-page-img" src={logo} alt="logo"/>
+          <Slideshow data={slides}/>
           <p>
 
           </p>

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+header {
+  background: var(--header);
+  opacity: 80%;
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header:hover {
+  opacity: 100%;
+}

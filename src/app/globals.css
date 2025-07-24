@@ -32,30 +32,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
-  background: var(--header);
-  opacity: 80%;
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-header:hover {
-  opacity: 100%;
-}
-
-footer {
-  background: var(--foreground);
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
-}
-
 /* Text Components */
 
 h1 {
@@ -106,7 +82,6 @@ a:hover {
 /* ClassNames */
 
 /* Three-column Format */
-
 
 .middle-column {
   width: 70%;
@@ -198,101 +173,6 @@ hr {
 .project-page-img {
   margin: auto;
   width: 600px;
-}
-
-/* Slideshow */
-.slideshow-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  height: fit-content;
-}
-
-.slide-container {
-  position: relative;
-  width: 600px;
-  height: 400px;
-  z-index: 0;
-}
-
-.slide {
-  width: 100%;
-  height: 100%;
-  display: none;
-}
-
-.slide-active {
-  width: 100%;
-  height: 100%;
-}
-
-.slide-arrow-left {
-  width: 3rem;
-  height: 3rem;
-  background-color: black;
-  border-radius: 100%;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.slide-arrow-right {
-  width: 3rem;
-  height: 3rem;
-  background-color: black;
-  border-radius: 100%;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.slide-indicator-container {
-  justify-content: center;
-  display: flex;
-  z-index: 1;
-  margin-top: 10px;
-}
-
-.slide-indicator {
-  background-color: gray;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 100%;
-  border: none;
-  outline: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
-}
-
-.slide-indicator-active {
-  background-color: white;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 100%;
-  border: none;
-  outline: none;
-  box-shadow: 0px 0px 5px #555;
-  margin: 0 0.2rem;
-  cursor: pointer;
-}
-
-/* Social Links */
-
-.social-link-container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 10px;
-  justify-content: center;
-  padding: 20px;
-  animation-name: slide-from-bottom;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-}
-
-.social-link:hover {
-  animation-name: grow-10-percent;
-  animation-duration: 0.1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
 }
 
 /* Tag Boxes */

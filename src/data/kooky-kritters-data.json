@@ -1,0 +1,16 @@
+{
+    "slides": [
+        {
+            "src": "/projects/kooky-kritters/screenshot-1.png",
+            "alt": "Screenshot 1"
+        },
+        {
+            "src": "/projects/kooky-kritters/screenshot-2.png",
+            "alt": "Screenshot 2"
+        },
+        {
+            "src": "/projects/kooky-kritters/screenshot-3.png",
+            "alt": "Screenshot 3"
+        }
+    ]
+}

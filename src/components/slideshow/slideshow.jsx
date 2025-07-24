@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import Image from "next/image";
-import "../app/globals.css";
+import "./slideshow.css";
 
 export const Slideshow = ({data}) => {
     const [currentIndex, setCurrentIndex] = useState(0);
