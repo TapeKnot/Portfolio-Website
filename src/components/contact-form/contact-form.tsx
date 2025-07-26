@@ -1,0 +1,85 @@
+"use client"
+import './contact-form.css'
+import React, { FormEvent, useState } from 'react'
+
+export const ContactForm = () => {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+
+    const onSubmit = async (e: FormEvent) => {
+        e.preventDefault();
+        
+        try {
+            const res = await fetch('/../../api/contact', {
+                method: 'POST',
+                body: JSON.stringify({
+                    name, email, subject, message,
+                }),
+                headers: {
+                    'content-type': 'application/json',
+                },
+            })
+        }
+        catch(err: any) {
+            console.error('Error', err)
+        }
+    }
+
+    return (
+        <form onSubmit={onSubmit}>
+            <h2 className="text-align-center">Contact Me</h2>
+            <hr/>
+            <p>Want to get in touch? Send me a message here!</p>
+            <div className="input-box">
+                <label>Full Name</label><br/>
+                <input 
+                    value={name} 
+                    className="field" 
+                    type="text" 
+                    name="name" 
+                    placeholder="Name" 
+                    onChange={(e) => setName(e.target.value)}
+                    required
+                />
+            </div>
+            <div className="input-box">
+                <label>Email Address</label><br/>
+                <input 
+                    value={email}
+                    className="field" 
+                    type="email" 
+                    name="email" 
+                    placeholder="Email" 
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                />
+            </div>
+            <div className="input-box">
+                <label>Subject</label><br/>
+                <input 
+                    value={subject}
+                    className="field" 
+                    type="text" 
+                    name="subject" 
+                    placeholder="Subject" 
+                    onChange={(e) => setSubject(e.target.value)}
+                    required
+                />
+            </div>
+            <div className="input-box">
+                <label>Message</label><br/>
+                <textarea 
+                    value={message}
+                    className="field message" 
+                    name="message" 
+                    placeholder="Start typing here..." 
+                    onChange={(e) => setMessage(e.target.value)}
+                    required
+                />
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    )
+}

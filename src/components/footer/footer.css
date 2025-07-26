@@ -3,8 +3,8 @@
 footer {
   background: var(--foreground);
   width: 100%;
-  text-align: center;
   margin-top: 20px;
+  padding: 20px;
 }
 
 /* Social Links */
@@ -14,7 +14,6 @@ footer {
   grid-auto-flow: column;
   grid-column-gap: 10px;
   justify-content: center;
-  padding: 20px;
   animation-name: slide-from-bottom;
   animation-duration: 0.3s;
   animation-timing-function: ease-out;
