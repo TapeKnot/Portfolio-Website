@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
 :root {
+  --color1: #cdfa05;
+  --color2: #FAFBFA;
+  --color3: #00C2B8;
+  --color4: #007A74;
+  --color5: #025CD3;
+  --color6: #203858;
+  --color7: #16263C;
+  --color8: #142234;
+  --color9: #202020;
+
   --background: #0063D1;
   --section-header: #050062;
   --project-card: #006CE0;
@@ -27,8 +37,8 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--text);
+  background: var(--color5);
+  color: var(--color2);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -106,16 +116,25 @@ hr {
   margin-left: auto;
   margin-bottom: 20px;
   margin-right: auto;
+  color: var(--color1);
+}
+
+.section-header p {
+  color: var(--color2);
 }
 
 .foreground-section {
-  background: var(--foreground);
+  background: var(--color6);
   width: fit-content;
   height: fit-content;
   padding: 20px;
   margin: auto;
-  border: 10px solid var(--foreground-border);
+  border: 10px solid var(--color7);
   border-radius: 20px;
+}
+
+.foreground-section .section-header {
+  color: var(--color2);
 }
 
 .h-centered-grid-section {
@@ -146,12 +165,13 @@ hr {
 /* Projects */
 
 .project-card {
-  background: var(--project-card);
-  border: 5px solid var(--project-card-border);
+  background: var(--color3);
+  border: 5px solid var(--color4);
   border-radius: 15px;
   width: 300px;
   height: fit-content;
   padding: 10px;
+  color: var(--color9);
 }
 
 .project-card:hover {
@@ -285,4 +305,8 @@ hr {
 
 .padding-20px {
   padding: 20px;
+}
+
+.color-color2 {
+  color: var(--color2);
 }

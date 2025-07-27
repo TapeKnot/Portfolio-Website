@@ -35,7 +35,7 @@ export default function Page() {
               I am currently looking for work, so feel free to reach out if you are interested in working together.
             </p>
           </div>
-          <div className="section-header">
+          <div className="section-header color-color2">
             <h2 className="text-align-center">Skills & Technologies</h2>
             <hr/>
           </div>
@@ -60,7 +60,7 @@ export default function Page() {
             <Image className="skill-img" src={unity} alt="Unity"/>
             <Image className="skill-img" src={godot} alt="Godot"/>
           </div>
-          <div className="section-header">
+          <div className="section-header color-color2">
             <h2 className="text-align-center">Resume</h2>
             <hr/>
           </div>

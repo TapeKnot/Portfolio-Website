@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 header {
-  background: var(--header);
+  background: var(--color7);
   opacity: 80%;
   width: 100%;
   display: grid;

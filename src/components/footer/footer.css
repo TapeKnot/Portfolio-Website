@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 footer {
-  background: var(--foreground);
+  background: var(--color7);
   width: 100%;
   margin-top: 20px;
   padding: 20px;
