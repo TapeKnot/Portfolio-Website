@@ -7,12 +7,13 @@ export const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [submitted, setSubmitted] = useState(false);
 
     const onSubmit = async (e: FormEvent) => {
         e.preventDefault();
         
         try {
-            const res = await fetch('/../../api/contact', {
+            const request = new Request('/api/contact', {
                 method: 'POST',
                 body: JSON.stringify({
                     name, email, subject, message,
@@ -20,7 +21,18 @@ export const ContactForm = () => {
                 headers: {
                     'content-type': 'application/json',
                 },
-            })
+            });
+
+            const res = await fetch(request);
+            const body = await res.json();
+            setSubmitted(body.submitted);
+            
+            if (submitted) {
+                setName("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+            }
         }
         catch(err: any) {
             console.error('Error', err)
