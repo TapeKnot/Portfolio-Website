@@ -4,9 +4,6 @@ header {
   background: var(--color7);
   opacity: 80%;
   width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
   padding: 10px;
   position: sticky;
   top: 0;
@@ -15,4 +12,10 @@ header {
 
 header:hover {
   opacity: 100%;
+}
+
+header nav {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
 }
