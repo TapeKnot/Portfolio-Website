@@ -70,7 +70,7 @@ export default function Page() {
             <a>LinkedIn</a>
           </div>
           <div className="padding-20px">
-            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1480px"/>
+            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1090px"/>
           </div>
         </div>
       </main>
