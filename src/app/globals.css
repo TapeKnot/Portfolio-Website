@@ -1,6 +1,16 @@
 @import "tailwindcss";
 
 :root {
+  --color1: #cdfa05;
+  --color2: #FAFBFA;
+  --color3: #00C2B8;
+  --color4: #007A74;
+  --color5: #025CD3;
+  --color6: #203858;
+  --color7: #16263C;
+  --color8: #142234;
+  --color9: #202020;
+
   --background: #0063D1;
   --section-header: #050062;
   --project-card: #006CE0;
@@ -27,31 +37,9 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--text);
+  background: var(--color5);
+  color: var(--color2);
   font-family: Arial, Helvetica, sans-serif;
-}
-
-header {
-  background: var(--header);
-  opacity: 80%;
-  width: 100%;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  padding: 10px;
-  position: fixed;
-}
-
-header:hover {
-  opacity: 100%;
-}
-
-footer {
-  background: var(--foreground);
-  width: 100%;
-  text-align: center;
-  margin-top: 20px;
 }
 
 /* Text Components */
@@ -105,7 +93,6 @@ a:hover {
 
 /* Three-column Format */
 
-
 .middle-column {
   width: 70%;
   height: fit-content;
@@ -129,16 +116,25 @@ hr {
   margin-left: auto;
   margin-bottom: 20px;
   margin-right: auto;
+  color: var(--color1);
+}
+
+.section-header p {
+  color: var(--color2);
 }
 
 .foreground-section {
-  background: var(--foreground);
+  background: var(--color6);
   width: fit-content;
   height: fit-content;
   padding: 20px;
   margin: auto;
-  border: 10px solid var(--foreground-border);
+  border: 10px solid var(--color7);
   border-radius: 20px;
+}
+
+.foreground-section .section-header {
+  color: var(--color2);
 }
 
 .h-centered-grid-section {
@@ -166,21 +162,16 @@ hr {
   padding: 20px;
 }
 
-/* Header */
-
-.header-space {
-  padding-top: 65px;
-}
-
 /* Projects */
 
 .project-card {
-  background: var(--project-card);
-  border: 5px solid var(--project-card-border);
+  background: var(--color3);
+  border: 5px solid var(--color4);
   border-radius: 15px;
   width: 300px;
   height: fit-content;
   padding: 10px;
+  color: var(--color9);
 }
 
 .project-card:hover {
@@ -202,26 +193,6 @@ hr {
 .project-page-img {
   margin: auto;
   width: 600px;
-}
-
-/* Social Links */
-
-.social-link-container {
-  display: grid;
-  grid-auto-flow: column;
-  grid-column-gap: 10px;
-  justify-content: center;
-  padding: 20px;
-  animation-name: slide-from-bottom;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-}
-
-.social-link:hover {
-  animation-name: grow-10-percent;
-  animation-duration: 0.1s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
 }
 
 /* Tag Boxes */
@@ -292,6 +263,15 @@ hr {
 
 /* Style */
 
+.hyperlink-button {
+  padding: 10px;
+  background: var(--color3);
+  border-radius: 6px;
+  border: 2px solid var(--color4);
+  color: var(--color9);
+  cursor: pointer;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -334,4 +314,8 @@ hr {
 
 .padding-20px {
   padding: 20px;
+}
+
+.color-color2 {
+  color: var(--color2);
 }

@@ -1,0 +1,16 @@
+{
+    "slides": [
+        {
+            "src": "/projects/grabby-gremlins/screenshot-1.png",
+            "alt": "Screenshot 1"
+        },
+        {
+            "src": "/projects/grabby-gremlins/screenshot-2.png",
+            "alt": "Screenshot 2"
+        },
+        {
+            "src": "/projects/grabby-gremlins/screenshot-3.png",
+            "alt": "Screenshot 3"
+        }
+    ]
+}

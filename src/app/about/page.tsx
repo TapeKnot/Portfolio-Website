@@ -35,7 +35,7 @@ export default function Page() {
               I am currently looking for work, so feel free to reach out if you are interested in working together.
             </p>
           </div>
-          <div className="section-header">
+          <div className="section-header color-color2">
             <h2 className="text-align-center">Skills & Technologies</h2>
             <hr/>
           </div>
@@ -60,17 +60,17 @@ export default function Page() {
             <Image className="skill-img" src={unity} alt="Unity"/>
             <Image className="skill-img" src={godot} alt="Godot"/>
           </div>
-          <div className="section-header">
+          <div className="section-header color-color2">
             <h2 className="text-align-center">Resume</h2>
             <hr/>
           </div>
           <div className="hv-centered-grid-section">
-            <a>Download</a>
-            <a>Open in New Tab</a>
-            <a>LinkedIn</a>
+            <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" download>Download</a>
+            <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Open in New Tab</a>
+            <a className="hyperlink-button" href="https://www.linkedin.com/in/levybe/" target="_blank">LinkedIn</a>
           </div>
           <div className="padding-20px">
-            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1480px"/>
+            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1090px"/>
           </div>
         </div>
       </main>

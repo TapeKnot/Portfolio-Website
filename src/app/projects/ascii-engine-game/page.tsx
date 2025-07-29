@@ -1,3 +1,6 @@
+import { Slideshow } from '../../../components/slideshow/slideshow'
+import { slides } from '../../../data/ascii-engine-game-data.json'
+
 export default function Page() {
   return (
     <div>
@@ -28,7 +31,7 @@ export default function Page() {
             <h2 className="text-align-center">Trailer</h2>
             <hr/>
           </div>
-          <iframe className="margin-auto" width="600" height="400" src="https://www.youtube.com/embed/4ecdmT0jkfs"/>
+          <Slideshow data={slides}/>
           <p>
 
           </p>

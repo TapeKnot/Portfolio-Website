@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "./header";
-import Footer from "./footer";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -50,7 +50,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
-        <div className="header-space"/>
         <div className="middle-column">{children}</div>
         <Footer/>
       </body>
