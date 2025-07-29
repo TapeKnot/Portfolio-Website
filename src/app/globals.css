@@ -263,6 +263,15 @@ hr {
 
 /* Style */
 
+.hyperlink-button {
+  padding: 10px;
+  background: var(--color3);
+  border-radius: 6px;
+  border: 2px solid var(--color4);
+  color: var(--color9);
+  cursor: pointer;
+}
+
 .text-align-center {
   text-align: center;
 }

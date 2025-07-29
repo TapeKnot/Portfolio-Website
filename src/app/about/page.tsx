@@ -65,9 +65,9 @@ export default function Page() {
             <hr/>
           </div>
           <div className="hv-centered-grid-section">
-            <a>Download</a>
-            <a>Open in New Tab</a>
-            <a>LinkedIn</a>
+            <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" download>Download</a>
+            <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Open in New Tab</a>
+            <a className="hyperlink-button" href="https://www.linkedin.com/in/levybe/" target="_blank">LinkedIn</a>
           </div>
           <div className="padding-20px">
             <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1090px"/>
