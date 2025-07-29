@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Image from "next/image";
 import "./slideshow.css";
 
-export const Slideshow = ({data}) => {
+export const Slideshow = ({data}: any) => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextSlide = () => {
