@@ -37,7 +37,7 @@ export const ContactForm = () => {
             const body = await res.json();
             setSubmitted(body.submitted);
         }
-        catch(err: any) {
+        catch(err) {
             console.error('Error', err)
         }
     }

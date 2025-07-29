@@ -1,4 +1,3 @@
-import type { NextRequest } from 'next/server'
 import FormData from 'form-data'
 import Mailgun from 'mailgun.js'
 
@@ -32,7 +31,7 @@ export async function POST(req: Request) {
         console.log(emailRes)
         confirmation = {submitted: true}
     }
-    catch (err: any) {
+    catch (err) {
         console.error('Error sending email', err)
     }
 
