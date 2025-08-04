@@ -27,6 +27,7 @@ export default function Page() {
               <b>Tools: </b>Unreal, Jira, Git<br/>
             </p>
           </div>
+          <br/>
           <a href="https://ratgoosesuitstudios.github.io/" target="_blank"><div className="text-align-center text-bold">Game Website & Download</div></a>
           <div className="section-header">
             <h2 className="text-align-center">Trailer</h2>

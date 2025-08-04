@@ -27,6 +27,7 @@ export default function Page() {
             </p>
           </div>
           <a href="https://tapeknot.itch.io/kooky-kritters" target="_blank"><div className="text-align-center text-bold">View Game on itch.io</div></a>
+          <a href="https://github.com/TapeKnot/Kooky-Kritters" target="_blank"><div className="text-align-center text-bold">View Git Repository</div></a>
           <div className="section-header">
             <h2 className="text-align-center">Screenshots</h2>
             <hr/>

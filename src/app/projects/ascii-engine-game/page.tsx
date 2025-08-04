@@ -27,6 +27,7 @@ export default function Page() {
             </p>
           </div>
           <a href="https://tapeknot.itch.io/bippits" target="_blank"><div className="text-align-center text-bold">View Game on itch.io</div></a>
+          <a href="https://github.com/TapeKnot/Block-Stack-Kaizo" target="_blank"><div className="text-align-center text-bold">View Game Git Repository</div></a>
           <div className="section-header">
             <h2 className="text-align-center">Trailer</h2>
             <hr/>

@@ -27,7 +27,10 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Benjamin Levy - Portfolio",
-  description: "Take a look at my projects!",
+  description: "Benjamin Levy's portfolio website featuring software and games he has worked on.",
+  creator: "Benjamin Levy",
+  keywords: ['Portfolio', 'Benjamin Levy', 'Ben', 'Levy', 'Game', 'Software', 'Web', 'Development', 'Full Stack', 
+    'WPI', 'Computer Science', 'CS', 'Interactive Media & Game Development', 'IMGD', ],
   icons: {
     icon: [
       {url: '/favicon/favicon-96x96.png', type: 'image/png', sizes: '96x96'},

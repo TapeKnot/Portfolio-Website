@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 header {
-  background: var(--color7);
+  background: var(--header-footer);
   opacity: 80%;
   width: 100%;
   padding: 10px;
