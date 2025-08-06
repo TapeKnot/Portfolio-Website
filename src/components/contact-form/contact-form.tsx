@@ -51,7 +51,7 @@ export const ContactForm = () => {
                 : <form onSubmit={onSubmit}>
                     <h2 className="text-align-center">Contact Me</h2>
                     <hr/>
-                    <p>Want to get in touch? Send me a message here!</p>
+                    <p className="text-align-center">Want to get in touch? Send me a message here!</p>
                     <div className="input-box">
                         <label>Full Name</label><br/>
                         <input 

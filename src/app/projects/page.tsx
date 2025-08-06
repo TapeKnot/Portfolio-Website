@@ -15,7 +15,7 @@ export default function Page() {
           <hr/>
         </div>
         <div className="foreground-section">
-          <div className="h-centered-grid-section">
+          <div className="project-card-container">
             <div className="project-card">
               <Link href="/projects/travelling-with-taste">
                 <Image className="project-card-img" src={travellingWithTaste} alt="travelling-with-taste"/>
@@ -58,9 +58,6 @@ export default function Page() {
               </div>
               <p>Created a restaurant reservation website enabling customers to conveniently book tables anywhere at any time.</p>
             </div>
-          </div>
-          <br/>
-          <div className="h-centered-grid-section">
             <div className="project-card">
               <Link href="/projects/kooky-kritters">
                 <Image className="project-card-img" src={kookyKritters} alt="kooky-kritters"/>
@@ -89,6 +86,7 @@ export default function Page() {
               <p>Developed a tower defense game featuring top-down shooter combat and resource management.</p>
             </div>
           </div>
+          <br/>
         </div>
       </main>
     </div>

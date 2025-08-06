@@ -1,20 +1,29 @@
 @import "tailwindcss";
 
 header {
-  background: var(--color7);
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.header-section {
+  background: var(--header-footer);
   opacity: 80%;
   width: 100%;
   padding: 10px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
-header:hover {
+@media (max-width: 650px) {
+  .header-section {
+    display: none;
+  }
+}
+
+.header-section:hover {
   opacity: 100%;
 }
 
-header nav {
+.header-section nav {
   display: grid;
   grid-auto-flow: column;
   align-items: center;
