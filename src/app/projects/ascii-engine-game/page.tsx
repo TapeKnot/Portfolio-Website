@@ -26,8 +26,11 @@ export default function Page() {
               <b>Tools: </b>SFML, Git<br/>
             </p>
           </div>
-          <a href="https://tapeknot.itch.io/bippits" target="_blank"><div className="text-align-center text-bold">View Game on itch.io</div></a>
-          <a href="https://github.com/TapeKnot/Block-Stack-Kaizo" target="_blank"><div className="text-align-center text-bold">View Game Git Repository</div></a>
+          <br/>
+          <div className="button-container">
+            <a className="hyperlink-button" href="https://tapeknot.itch.io/bippits" target="_blank">View Game on itch.io</a>
+          <a className="hyperlink-button" href="https://github.com/TapeKnot/Block-Stack-Kaizo" target="_blank">View Game Git Repository</a>
+          </div>
           <div className="section-header">
             <h2 className="text-align-center">Trailer</h2>
             <hr/>

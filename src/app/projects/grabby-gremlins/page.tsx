@@ -26,7 +26,10 @@ export default function Page() {
               <b>Tools: </b>Unity, Trello, Git<br/>
             </p>
           </div>
-          <a href="https://mantisstudios.itch.io/grabby-gremlins" target="_blank"><div className="text-align-center text-bold">View Game on itch.io</div></a>
+          <br/>
+          <div className="button-container">
+            <a className="hyperlink-button" href="https://mantisstudios.itch.io/grabby-gremlins" target="_blank">View Game on itch.io</a>
+          </div>
           <div className="section-header">
             <h2 className="text-align-center">Screenshots</h2>
             <hr/>

@@ -283,6 +283,12 @@ hr {
 
 /* Style */
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .hyperlink-button {
   padding: 10px;
   background: var(--project-card);
