@@ -9,11 +9,16 @@ form {
 }
 
 form button {
+    color:#00C2B8;
     padding: 10px;
     background: var(--project-card);
     border-radius: 6px;
     border: 2px solid var(--project-card-border);
     cursor: pointer;
+}
+
+form button:hover {
+    color:#00F5E9;
 }
 
 .input-box {

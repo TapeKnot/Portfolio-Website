@@ -161,14 +161,22 @@ hr {
   padding: 20px;
 }
 
-/* Projects */
+/* Project Card */
+
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  columns: 
+}
 
 .project-card {
   background: var(--project-card);
   border: 5px solid var(--project-card-border);
   border-radius: 15px;
-  max-width: 300px;
-  height: fit-content;
+  width: 300px;
+  height: 350px;
   padding: 10px;
   color: var(--text);
 }
@@ -188,6 +196,8 @@ hr {
   margin-bottom: 10px;
   aspect-ratio: 16/9;
 }
+
+/* Project Page */
 
 .project-page-img {
   margin: auto;
@@ -279,6 +289,16 @@ hr {
   border-radius: 6px;
   border: 2px solid var(--project-card-border);
   cursor: pointer;
+}
+
+.hyperlink-button-large {
+  padding: 10px;
+  background: var(--project-card);
+  border-radius: 6px;
+  border: 2px solid var(--project-card-border);
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .text-align-center {

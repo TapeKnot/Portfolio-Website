@@ -19,7 +19,7 @@ export default function Page() {
           </p>
         </div>
         <div className="foreground-section">
-          <div className="h-centered-grid-section">
+          <div className="project-card-container">
             <div className="project-card">
               <Link href="/projects/travelling-with-taste">
                 <Image className="project-card-img" src={travellingWithTaste} alt="travelling-with-taste"/>
@@ -64,7 +64,9 @@ export default function Page() {
             </div>
           </div>
           <br/>
-          <Link href="/projects"><h2 className="text-underline text-align-center">See More Projects!</h2></Link>
+          <div className="flex-div justify-content-center">
+            <Link className="hyperlink-button-large" href="/projects">See More Projects!</Link>
+          </div>
         </div>
       </main>
     </div>
