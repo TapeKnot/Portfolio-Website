@@ -25,7 +25,7 @@ export default function Page() {
           <hr/>
         </div>
         <div className="foreground-section">
-          <div className="hv-centered-grid-section">
+          <div className="about-me-container">
             <Image className="profile-img" src={benjaminLevy} alt="benjamin-levy"/>
             <p className="about-me-text">
               Hi there!
@@ -35,11 +35,11 @@ export default function Page() {
               I am currently looking for work, so feel free to reach out if you are interested in working together.
             </p>
           </div>
-          <div className="section-header color-color2">
-            <h2 className="text-align-center">Skills & Technologies</h2>
+          <div className="section-header">
+            <h2>Skills & Technologies</h2>
             <hr/>
           </div>
-          <div className="hv-centered-grid-section">
+          <div className="skill-container">
             <Image className="skill-img" src={js} alt="Javascript"/>
             <Image className="skill-img" src={ts} alt="Typescript"/>
             <Image className="skill-img" src={html} alt="HTML5"/>
@@ -50,12 +50,12 @@ export default function Page() {
             <Image className="skill-img" src={java} alt="Java"/>
             <Image className="skill-img" src={sql} alt="SQL"/>
           </div>
-          <div className="hv-centered-grid-section">
+          <div className="skill-container">
             <Image className="skill-img" src={react} alt="React"/>
             <Image className="skill-img" src={nodejs} alt="Node.js"/>
             <Image className="skill-img" src={nextjs} alt="Next.js"/>
           </div>
-          <div className="hv-centered-grid-section">
+          <div className="skill-container">
             <Image className="skill-img" src={unreal} alt="Unreal"/>
             <Image className="skill-img" src={unity} alt="Unity"/>
             <Image className="skill-img" src={godot} alt="Godot"/>
