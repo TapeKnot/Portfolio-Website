@@ -26,7 +26,7 @@ export default function Page() {
         </div>
         <div className="foreground-section">
           <div className="about-me-container">
-            <Image className="profile-img" src={benjaminLevy} alt="benjamin-levy"/>
+            <div className="skill-img-div"><Image className="profile-img" src={benjaminLevy} alt="benjamin-levy"/></div>
             <p className="about-me-text">
               Hi there!
               I am Benjamin Levy, a passionate software engineer and game programmer.
@@ -40,37 +40,37 @@ export default function Page() {
             <hr/>
           </div>
           <div className="skill-container">
-            <Image className="skill-img" src={js} alt="Javascript"/>
-            <Image className="skill-img" src={ts} alt="Typescript"/>
-            <Image className="skill-img" src={html} alt="HTML5"/>
-            <Image className="skill-img" src={css} alt="CSS"/>
-            <Image className="skill-img" src={c} alt="C"/>
-            <Image className="skill-img" src={cpp} alt="C++"/>
-            <Image className="skill-img" src={cSharp} alt="C#"/>
-            <Image className="skill-img" src={java} alt="Java"/>
-            <Image className="skill-img" src={sql} alt="SQL"/>
+            <div className="skill-img-div"><Image className="skill-img" src={react} alt="React"/></div>
+            <div className="skill-img-div"><Image className="skill-img" src={nodejs} alt="Node.js"/></div>
+            <div className="skill-img-div"><Image className="skill-img" src={nextjs} alt="Next.js"/></div>
           </div>
           <div className="skill-container">
-            <Image className="skill-img" src={react} alt="React"/>
-            <Image className="skill-img" src={nodejs} alt="Node.js"/>
-            <Image className="skill-img" src={nextjs} alt="Next.js"/>
+            <div className="skill-img-div"><Image className="skill-img" src={unreal} alt="Unreal"/></div>
+            <div className="skill-img-div"><Image className="skill-img" src={unity} alt="Unity"/></div>
+            <div className="skill-img-div"><Image className="skill-img" src={godot} alt="Godot"/></div>
           </div>
           <div className="skill-container">
-            <Image className="skill-img" src={unreal} alt="Unreal"/>
-            <Image className="skill-img" src={unity} alt="Unity"/>
-            <Image className="skill-img" src={godot} alt="Godot"/>
+            <div className="skill-img-div"><Image className="skill-img-language" src={js} alt="Javascript"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={ts} alt="Typescript"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={html} alt="HTML5"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={css} alt="CSS"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={c} alt="C"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={cpp} alt="C++"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={cSharp} alt="C#"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={java} alt="Java"/></div>
+            <div className="skill-img-div"><Image className="skill-img-language" src={sql} alt="SQL"/></div>
           </div>
           <div className="section-header color-color2">
             <h2 className="text-align-center">Resume</h2>
             <hr/>
           </div>
-          <div className="hv-centered-grid-section">
+          <div className="button-container">
             <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" download>Download</a>
             <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Open in New Tab</a>
-            <a className="hyperlink-button" href="https://www.linkedin.com/in/levybe/" target="_blank">LinkedIn</a>
+            <a className="hyperlink-button" type="application/pdf" href="https://www.linkedin.com/in/levybe/" target="_blank">LinkedIn</a>
           </div>
           <div className="padding-20px">
-            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="800px" height="1090px"/>
+            <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="100%" height="1090px"/>
           </div>
         </div>
       </main>
