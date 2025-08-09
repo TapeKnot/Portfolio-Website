@@ -49,19 +49,43 @@ h1 {
   font-weight: bold;
 }
 
+/* @media (max-width: 650px) {
+  h1 {
+    font-size: 40px;
+  }
+} */
+
 h2 {
   font-size: 30px;
   font-weight: bold;
 }
+
+/* @media (max-width: 650px) {
+  h2 {
+    font-size: 20px;
+  }
+} */
 
 h3 {
   font-size: 20px;
   font-weight: bold;
 }
 
+/* @media (max-width: 650px) {
+  h3 {
+    font-size: 14px;
+  }
+} */
+
 p {
   font-size: 16px;
 }
+
+/* @media (max-width: 650px) {
+  p {
+    font-size: 11px;
+  }
+} */
 
 a {
   color:#00C2B8;
@@ -69,6 +93,14 @@ a {
 
 a:hover {
   color:#00F5E9;
+}
+
+ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
 }
 
 /* Animations */
@@ -94,9 +126,15 @@ a:hover {
 /* Three-column Format */
 
 .middle-column {
-  width: 70%;
+  max-width: 70%;
   height: fit-content;
   margin: auto;
+}
+
+@media (max-width: 650px) {
+  .middle-column {
+    max-width: 100%;
+  }
 }
 
 /* Generic */
@@ -108,7 +146,7 @@ hr {
 }
 
 .section-header {
-  width: fit-content;
+  max-width: fit-content;
   height: fit-content;
   margin-top: 40px;
   margin-left: auto;
@@ -123,7 +161,6 @@ hr {
 
 .foreground-section {
   background: var(--foreground);
-  width: fit-content;
   height: fit-content;
   padding: 20px;
   margin: auto;
@@ -172,8 +209,8 @@ hr {
   background: var(--project-card);
   border: 5px solid var(--project-card-border);
   border-radius: 15px;
-  width: 300px;
-  height: 350px;
+  max-width: 300px;
+  min-height: 350px;
   padding: 10px;
   color: var(--text);
 }
@@ -199,6 +236,19 @@ hr {
 .project-page-img {
   margin: auto;
   width: 600px;
+}
+
+.project-overview-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logistics-container {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Tag Boxes */
@@ -262,7 +312,8 @@ hr {
 
 .profile-img {
   border-radius: 20px;
-  width: 400px;
+  width: 100%;
+  max-height: 400px;
   aspect-ratio: 1 / 1;
   border: 5px solid var(--project-card-border)
 }
@@ -274,18 +325,27 @@ hr {
 
 .skill-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 2%;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.skill-img-div {
+  min-width: 0;
 }
 
 .skill-img {
-  aspect-ratio: auto;
-  height: 80px;
-  width: fit-content;
+  width: 100%;
+  max-height: 100px;
+}
+
+.skill-img-language {
+  width: 100%;
+  max-height: 80px;
 }
 
 /* Not Found */
@@ -312,6 +372,7 @@ hr {
   border-radius: 6px;
   border: 2px solid var(--project-card-border);
   cursor: pointer;
+  text-align: center;
 }
 
 .hyperlink-button-large {
@@ -322,6 +383,7 @@ hr {
   cursor: pointer;
   font-size: 30px;
   font-weight: bold;
+  text-align: center;
 }
 
 .text-align-center {
@@ -366,4 +428,8 @@ hr {
 
 .padding-20px {
   padding: 20px;
+}
+
+.width-75 {
+  width: 75%;
 }

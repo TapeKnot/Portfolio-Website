@@ -4,8 +4,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  height: fit-content;
+  max-width: fit-content;
+  max-height: fit-content;
+  margin: auto;
 }
 
 .slide-container {
