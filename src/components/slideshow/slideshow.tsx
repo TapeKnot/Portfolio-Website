@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import "./slideshow.css";
+import slideArrowLeft from '../../../public/projects/slideshow/slideshow-left.png'
+import slideArrowRight from '../../../public/projects/slideshow/slideshow-right.png'
 
 export const Slideshow = ({data}: any) => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,9 +17,9 @@ export const Slideshow = ({data}: any) => {
     }
 
     return (
-        <div>
+        <div className="slideshow-outer-container">
             <div className="slideshow-container">
-                <button className="slide-arrow-left" onClick={prevSlide}>{"<--"}</button>
+                <button className="slide-arrow" onClick={prevSlide}><Image className="slide-arrow-img" src={slideArrowLeft} alt="Left Slide Arrow"/></button>
                 <div className="slide-container">
                     { data.map((item: {"src": string, "alt": string}, index: number) => {
                         if (item.src.includes("https://www.youtube.com/embed/")) {
@@ -28,7 +30,7 @@ export const Slideshow = ({data}: any) => {
                         }
                     })}
                 </div>
-                <button className="slide-arrow-right" onClick={nextSlide}>{"-->"}</button>
+                <button className="slide-arrow" onClick={nextSlide}><Image className="slide-arrow-img" src={slideArrowRight} alt="Right Slide Arrow"/></button>
             </div>
             <span className="slide-indicator-container">
                 { data.map((item: {"src": string, "alt": string}, index: number) => {

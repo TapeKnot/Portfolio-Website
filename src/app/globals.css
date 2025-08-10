@@ -49,43 +49,19 @@ h1 {
   font-weight: bold;
 }
 
-/* @media (max-width: 650px) {
-  h1 {
-    font-size: 40px;
-  }
-} */
-
 h2 {
   font-size: 30px;
   font-weight: bold;
 }
-
-/* @media (max-width: 650px) {
-  h2 {
-    font-size: 20px;
-  }
-} */
 
 h3 {
   font-size: 20px;
   font-weight: bold;
 }
 
-/* @media (max-width: 650px) {
-  h3 {
-    font-size: 14px;
-  }
-} */
-
 p {
   font-size: 16px;
 }
-
-/* @media (max-width: 650px) {
-  p {
-    font-size: 11px;
-  }
-} */
 
 a {
   color:#00C2B8;
@@ -153,6 +129,13 @@ hr {
   margin-bottom: 40px;
   margin-right: auto;
   color: var(--heading-text);
+}
+
+@media (max-width: 650px) {
+  .section-header {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
 }
 
 .section-header p {
@@ -233,22 +216,35 @@ hr {
 
 /* Project Page */
 
-.project-page-img {
-  margin: auto;
-  width: 600px;
-}
-
 .project-overview-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
+  gap: 2em;
+  width: 100%;
+  height: 25em;
+
+}
+
+@media (max-width: 650px) {
+  .project-overview-container {
+    justify-content: center;
+  }
 }
 
 .logistics-container {
-  width: 25%;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logistics-container .button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
 }
 
 /* Tag Boxes */

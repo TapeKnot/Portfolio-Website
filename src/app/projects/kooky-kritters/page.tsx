@@ -24,8 +24,10 @@ export default function Page() {
                 <b>Language: </b>C#<br/>
                 <b>Tools: </b>Unity, Trello, Git<br/>
               </p>
-              <a className="hyperlink-button" href="https://tapeknot.itch.io/kooky-kritters" target="_blank">View Game on itch.io</a>
-              <a className="hyperlink-button" href="https://github.com/TapeKnot/Kooky-Kritters" target="_blank">View Git Repository</a>
+              <div className="button-container">
+                <a className="hyperlink-button" href="https://tapeknot.itch.io/kooky-kritters" target="_blank">View Game on itch.io</a>
+                <a className="hyperlink-button" href="https://github.com/TapeKnot/Kooky-Kritters" target="_blank">View Git Repository</a>
+              </div>
             </div>
             <div className="width-75">
               <Slideshow data={slides}/>
