@@ -5,6 +5,7 @@ header {
   position: sticky;
   top: 0;
   background: var(--header-footer);
+  color: var(--light-text);
   opacity: 80%;
   width: 100%;
 }

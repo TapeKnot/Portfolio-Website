@@ -6,6 +6,7 @@ form {
     padding: 1em;
     border-radius: 1em;
     margin: auto;
+    color: var(--dark-text);
 }
 
 @media (max-width: 650px) {
@@ -15,16 +16,16 @@ form {
 }
 
 form button {
-    color:#00C2B8;
-    padding: 10px;
+    color:var(--hyperlink-text);
+    padding: 0.5em;
     background: var(--project-card);
-    border-radius: 6px;
-    border: 2px solid var(--project-card-border);
+    border-radius: 0.5em;
+    border: 0.25em solid var(--project-card-border);
     cursor: pointer;
 }
 
 form button:hover {
-    color:#00F5E9;
+    color:var(--hyperlink-text-hover);
 }
 
 .input-box {
@@ -34,7 +35,7 @@ form button:hover {
 .input-box .field {
     width: 100%;
     height: 2.5em;
-    background: var(--text);
+    background: var(--light-text);
     color: black;
     border: 0.15em solid var(--project-card-border);
     outline: none;
@@ -45,4 +46,16 @@ form button:hover {
 
 .input-box .field.message {
     height: 15em;
+}
+
+.contact-form-sent {
+    width: 50%;
+    background: var(--foreground);
+    height: fit-content;
+    padding: 1em;
+    margin: auto;
+    border-radius: 1em;
+    color: var(--dark-text);
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
