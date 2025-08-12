@@ -45,9 +45,9 @@ export const ContactForm = () => {
     return (
         <div>
             {submitted
-                ? <div className="foreground-section">
+                ? <section className="contact-form-sent">
                     <h3 className="text-align-center">Message sent! I will get back to you as soon as I can.</h3>
-                </div>
+                </section>
                 : <form onSubmit={onSubmit}>
                     <h2 className="text-align-center">Contact Me</h2>
                     <hr/>
