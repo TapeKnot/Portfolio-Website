@@ -126,7 +126,7 @@ ul {
 
 @media (max-width: 650px) {
   .middle-column {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
@@ -138,13 +138,6 @@ ul {
   margin-left: auto;
   margin-right: auto;
   color: var(--heading-text);
-}
-
-@media (max-width: 650px) {
-  .section-header {
-    margin-left: 1em;
-    margin-right: 1em;
-  }
 }
 
 .section-header p {
