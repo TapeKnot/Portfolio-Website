@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 form {
-    width: 50%;
+    width: 60vw;
     background: var(--foreground);
     padding: 1em;
     border-radius: 1em;
@@ -11,7 +11,7 @@ form {
 
 @media (max-width: 650px) {
   form {
-    width: 100%;
+    width: 90vw;
   }
 }
 
@@ -22,29 +22,53 @@ form button {
     border-radius: 0.5em;
     border: 0.25em solid var(--project-card-border);
     cursor: pointer;
+    box-shadow: 0em 0.2em 0.5em #555;
+}
+
+form button:hover {
+  animation-name: grow-5-percent;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 form button:hover {
     color:var(--hyperlink-text-hover);
 }
 
+.input-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-input-container {
+    width: 40%;
+}
+
 .input-box {
     margin-top: 1em;
 }
 
-.input-box .field {
+.field {
     width: 100%;
     height: 2.5em;
-    background: var(--light-text);
+    background: var(--project-card);
     color: black;
     border: 0.15em solid var(--project-card-border);
     outline: none;
     border-radius: 0.3em;
     padding: 1em;
     margin-top: 0.2em;
+    box-shadow: 0em 0.2em 0.5em #555;
 }
 
-.input-box .field.message {
+.message-input-box {
+    margin-top: 1em;
+    width: 55%;
+}
+
+.field.message {
     height: 15em;
 }
 
@@ -58,4 +82,18 @@ form button:hover {
     color: var(--dark-text);
     margin-top: 2em;
     margin-bottom: 2em;
+}
+
+@media (max-width: 650px) {
+    .input-container {
+        display: block;
+    }
+
+    .info-input-container {
+        width: 100%;
+    }
+
+    .message-input-box {
+        width: 100%;
+    }
 }

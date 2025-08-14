@@ -49,57 +49,63 @@ export const ContactForm = () => {
                     <h3 className="text-align-center">Message sent! I will get back to you as soon as I can.</h3>
                 </section>
                 : <form onSubmit={onSubmit}>
-                    <h2 className="text-align-center">Contact Me</h2>
-                    <hr/>
-                    <p className="text-align-center">Want to get in touch? Send me a message here!</p>
-                    <div className="input-box">
-                        <label>Full Name</label><br/>
-                        <input 
-                            value={name} 
-                            className="field" 
-                            type="text" 
-                            name="name" 
-                            placeholder="Name" 
-                            onChange={(e) => setName(e.target.value)}
-                            required
-                        />
+                    <div className="section-header">
+                        <h2 className="text-align-center">Contact Me</h2>
+                        <hr/>
+                        <p className="text-align-center">Want to get in touch? Send me a message here!</p>
                     </div>
-                    <div className="input-box">
-                        <label>Email Address</label><br/>
-                        <input 
-                            value={email}
-                            className="field" 
-                            type="email" 
-                            name="email" 
-                            placeholder="Email" 
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="input-box">
-                        <label>Subject</label><br/>
-                        <input 
-                            value={subject}
-                            className="field" 
-                            type="text" 
-                            name="subject" 
-                            placeholder="Subject" 
-                            onChange={(e) => setSubject(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="input-box">
-                        <label>Message</label><br/>
-                        <textarea 
-                            value={message}
-                            className="field message" 
-                            name="message" 
-                            placeholder="Start typing here..." 
-                            onChange={(e) => setMessage(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div className="flex-div justify-content-center">
+                    <section className="input-container">
+                        <div className="info-input-container">
+                            <div className="input-box">
+                                <label>Full Name</label><br/>
+                                <input 
+                                    value={name} 
+                                    className="field" 
+                                    type="text" 
+                                    name="name" 
+                                    placeholder="Name" 
+                                    onChange={(e) => setName(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="input-box">
+                                <label>Email Address</label><br/>
+                                <input 
+                                    value={email}
+                                    className="field" 
+                                    type="email" 
+                                    name="email" 
+                                    placeholder="Email" 
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="input-box">
+                                <label>Subject</label><br/>
+                                <input 
+                                    value={subject}
+                                    className="field" 
+                                    type="text" 
+                                    name="subject" 
+                                    placeholder="Subject" 
+                                    onChange={(e) => setSubject(e.target.value)}
+                                    required
+                                />
+                            </div>
+                        </div>
+                        <div className="message-input-box">
+                            <label>Message</label><br/>
+                            <textarea 
+                                value={message}
+                                className="field message" 
+                                name="message" 
+                                placeholder="Start typing here..." 
+                                onChange={(e) => setMessage(e.target.value)}
+                                required
+                            />
+                        </div>
+                    </section>
+                    <div className="button-container">
                         <button type="submit">Send</button>
                     </div>
                 </form>

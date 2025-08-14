@@ -18,25 +18,25 @@ export const Slideshow = ({data}: any) => {
 
     return (
         <div className="slideshow-outer-container">
-            <div className="slideshow-container">
+            <div className="slide-container">
+                { data.map((item: {"src": string, "alt": string}, index: number) => {
+                    if (item.src.includes("https://www.youtube.com/embed/")) {
+                        return <iframe className={currentIndex === index ? "slide-active" : "slide"} src={item.src} key={index} width="100%" height="100%"/>
+                    }
+                    else {
+                        return <Image className={currentIndex === index ? "slide-active" : "slide"} src={item.src} alt={item.alt} key={index} fill={true}/>
+                    }
+                })}
+            </div>
+            <div className="slideshow-controls-container">
                 <button className="slide-arrow" onClick={prevSlide}><Image className="slide-arrow-img" src={slideArrowLeft} alt="Left Slide Arrow"/></button>
-                <div className="slide-container">
+                <span className="slide-indicator-container">
                     { data.map((item: {"src": string, "alt": string}, index: number) => {
-                        if (item.src.includes("https://www.youtube.com/embed/")) {
-                            return <iframe className={currentIndex === index ? "slide-active" : "slide"} src={item.src} key={index}/>
-                        }
-                        else {
-                            return <Image className={currentIndex === index ? "slide-active" : "slide"} src={item.src} alt={item.alt} key={index} fill={true}/>
-                        }
+                        return <button className={currentIndex === index ? "slide-indicator-active" : "slide-indicator"} key={index} onClick={() => setCurrentIndex(index)}></button>
                     })}
-                </div>
+                </span>
                 <button className="slide-arrow" onClick={nextSlide}><Image className="slide-arrow-img" src={slideArrowRight} alt="Right Slide Arrow"/></button>
             </div>
-            <span className="slide-indicator-container">
-                { data.map((item: {"src": string, "alt": string}, index: number) => {
-                    return <button className={currentIndex === index ? "slide-indicator-active" : "slide-indicator"} key={index} onClick={() => setCurrentIndex(index)}></button>
-                })}
-            </span>
         </div>
         
     )

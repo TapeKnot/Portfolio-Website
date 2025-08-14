@@ -1,20 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0066A5;
-  --header-footer: #203858;
-  --foreground: #FCFF99;
-  --foreground-border: #1B998B;
-  --project-card: #3F6634;
-  --project-card-border: #77ba62;
+  --color1: #ffffff;
+  --color2: #FFFDF2;
+  --color3: #FBF5D1;
+  --color4: #0F3A6B;
+  --color5: #FFD500;
 
+  --background: var(--color2);
+  --header-footer: var(--color4);
+  --foreground: var(--color3);
+  --foreground-border: var(--foreground);
+
+  --span-bar: var(--color5);
+
+  --project-card: var(--color2);
+  --project-card-border: var(--project-card);
+
+  --button: var(--background);
+  --button-border: var(--background);
   
-  --light-text: #FAFBFA;
-  --dark-text: #202020;
-  --heading-text: #FFF700;
-  --hyperlink-text: #00C2B8;
-  --hyperlink-text-hover: #00F5E9;
-  --not-found-text: #939393;
+  --light-text: var(--background);
+  --dark-text: var(--header-footer);
+  --heading-text: var(--dark-text);
+  --hyperlink-text: var(--color4);
+  --hyperlink-text-hover: var(--color4);
+  --button-text: var(--dark-text);
+  --not-found-text: var(--dark-text);
 }
 
 @theme inline {
@@ -49,8 +61,8 @@ main {
   margin-bottom: 2em;
 }
 
-main .section-header {
-  color: var(--text);
+section {
+  margin-bottom: 2em;
 }
 
 /* Text Components */
@@ -124,12 +136,6 @@ ul {
   margin: auto;
 }
 
-@media (max-width: 650px) {
-  .middle-column {
-    max-width: 90%;
-  }
-}
-
 /* Generic */
 
 .section-header {
@@ -137,11 +143,15 @@ ul {
   height: fit-content;
   margin-left: auto;
   margin-right: auto;
-  color: var(--heading-text);
 }
 
-.section-header p {
-  color: var(--light-text);
+.section-header span {
+  background: var(--span-bar);
+  display: block;
+  width: 100%;
+  height: 0.25em;
+  margin-top: 0.25em;
+  margin-bottom: 1em;
 }
 
 /* Project Card */
@@ -149,7 +159,7 @@ ul {
 .project-card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1em;
+  gap: 2em;
   justify-content: center;
 }
 
@@ -160,7 +170,8 @@ ul {
   max-width: 20em;
   min-height: 22.5em;
   padding: 0.5em;
-  color: var(--light-text);
+  color: var(--dark-text);
+  box-shadow: 0em 0.3em 1em #555;
 }
 
 .project-card:hover {
@@ -182,25 +193,18 @@ ul {
 
 .project-overview-container {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 2em;
   width: 100%;
-  height: 25em;
-}
-
-@media (max-width: 650px) {
-  .project-overview-container {
-    justify-content: center;
-  }
 }
 
 .logistics-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  max-width: 14em;
+  gap: 2em;
 }
 
 .logistics-container .button-container {
@@ -273,7 +277,8 @@ ul {
   width: 100%;
   max-height: 25em;
   aspect-ratio: 1 / 1;
-  border: 0.25em solid var(--project-card-border)
+  border: 0.25em solid var(--project-card-border);
+  box-shadow: 0em 0.5em 1em #555;
 }
 
 .about-me-text {
@@ -326,7 +331,7 @@ ul {
 .button-container {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 1.5em;
   margin: 1em;
 }
 
@@ -337,6 +342,15 @@ ul {
   border: 0.25rem solid var(--project-card-border);
   cursor: pointer;
   text-align: center;
+  box-shadow: 0em 0.3em 0.8em #555;
+  color: var(--button-text);
+}
+
+.hyperlink-button:hover {
+  animation-name: grow-5-percent;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 .hyperlink-button-large {
@@ -348,6 +362,15 @@ ul {
   cursor: pointer;
   font-weight: bold;
   text-align: center;
+  box-shadow: 0em 0.3em 0.5em #555;
+  color: var(--button-text);
+}
+
+.hyperlink-button-large:hover {
+  animation-name: grow-5-percent;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 .text-align-center {
@@ -392,4 +415,20 @@ ul {
 
 .width-75 {
   width: 75%;
+}
+
+.margin-top-2em {
+  margin-top: 2em;
+}
+
+/* Responsive Sizing */
+
+@media (max-width: 650px) {
+  .middle-column {
+    max-width: 90%;
+  }
+
+  .logistics-container {
+    max-width: 100%;
+  }
 }

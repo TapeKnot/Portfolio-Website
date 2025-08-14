@@ -11,7 +11,7 @@ export default function Page() {
     <div>
       <div className="section-header">
         <h1 className="text-align-center">Projects</h1>
-        <hr/>
+        <span/>
       </div>
       <main>
         <div className="project-card-container">

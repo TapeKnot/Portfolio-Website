@@ -6,8 +6,8 @@ export default function Page() {
     <article>
       <div className="section-header">
         <h1 className="text-align-center">Grabby Gremlins</h1>
-        <hr/>
-        <p className="text-align-center">A top-down tower defense game about grabbing gems and keeping gremlins at bay.</p>
+        <span/>
+        <p className="text-align-center">A tower defense & top-down shooter game about grabbing gems and keeping gremlins at bay.</p>
       </div>
       <main>
         <section className="project-overview-container">
@@ -25,9 +25,13 @@ export default function Page() {
             </p>
             <a className="hyperlink-button" href="https://mantisstudios.itch.io/grabby-gremlins" target="_blank">View Game on itch.io</a>
           </div>
-          <div className="width-75">
             <Slideshow data={slides}/>
-          </div>
+        </section>
+        <section>
+          <p>
+            Grabby Gremlins is a tower defense game featuring top-down shooter elements. Players must build up their stash of valuable gems while defending it from endless waves of gremlins.
+            Players use a vacuum to suck in gems which can then be deposited into their stash or launched at gremlins to knock them away.
+          </p>
         </section>
       </main>
     </article>
