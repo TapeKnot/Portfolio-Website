@@ -32,18 +32,19 @@ export const Header = () => {
               }
           </button>
           <div className="nav-button-container">
-            <Link className="text-bold" href="/">Home</Link>
-            <Link className="text-bold" href="/projects">Projects</Link>
-            <Link className="text-bold" href="/about">About</Link>
-            <a className="text-bold" href="/Benjamin-Levy-Resume.pdf" target="_blank">Resume</a>
+            <Link className="nav-button" href="/">Home</Link>
+            <Link className="nav-button" href="/projects">Projects</Link>
+            <Link className="nav-button" href="/about">About</Link>
+            <a className="nav-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Resume</a>
           </div>
         </div>
+        <span/>
         {opened
           ? <div className="mobile-nav-button-container">
-              <Link className="mobile-nav-button" href="/">Home</Link>
-              <Link className="mobile-nav-button" href="/projects">Projects</Link>
-              <Link className="mobile-nav-button" href="/about">About</Link>
-              <a className="mobile-nav-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Resume</a>
+              <Link className="nav-button" href="/">Home</Link>
+              <Link className="nav-button" href="/projects">Projects</Link>
+              <Link className="nav-button" href="/about">About</Link>
+              <a className="nav-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Resume</a>
           </div>
           : <div/>
         }

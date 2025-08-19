@@ -6,7 +6,7 @@ export default function Page() {
     <article>
       <div className="section-header">
         <h1 className="text-align-center">ASCII Engine & Game</h1>
-        <hr/>
+        <span/>
         <p className="text-align-center">A game engine created from scratch & a tricky block-stacking game made using it.</p>
       </div>
       <main>
@@ -25,9 +25,13 @@ export default function Page() {
             </p>
             <a className="hyperlink-button" href="https://tapeknot.itch.io/bippits" target="_blank">View Game on itch.io</a>
           </div>
-          <div className="width-75">
-            <Slideshow data={slides}/>
-          </div>
+          <Slideshow data={slides}/>
+        </section>
+        <section>
+          <p>
+            The created engine is a replication of Dragonfly, a lightweight game engine that utilizes ASCII art graphics.
+            Bippits, an arcade-style game about stacking block creatures as high as possible, was created in the replicated engine.
+          </p>
         </section>
       </main>
     </article>

@@ -6,7 +6,7 @@ export default function Page() {
     <article>
       <div className="section-header">
         <h1 className="text-align-center">Travelling With Taste</h1>
-        <hr/>
+        <span/>
         <p className="text-align-center">A game about rats, cheese, and airport security.</p>
       </div>
       <main>
@@ -24,11 +24,16 @@ export default function Page() {
               <b>Language: </b>Blueprints<br/>
               <b>Tools: </b>Unreal, Jira, Git<br/>
             </p>
-            <a className="hyperlink-button" href="https://ratgoosesuitstudios.github.io/" target="_blank">Game Website & Download</a>
+            <a className="hyperlink-button" href="https://codazen.itch.io/travelling-with-taste" target="_blank">View Game on itch.io</a>
+            <a className="hyperlink-button" href="https://ratgoosesuitstudios.github.io/" target="_blank">View Devlog Website</a>
           </div>
-          <div className="width-75">
-            <Slideshow data={slides}/>
-          </div>
+          <Slideshow data={slides}/>
+        </section>
+        <section>
+          <p>
+            Travelling With Taste is a goofy stealth game about rats trying to steal from cheese-trafficking airport security.
+            Players take control of the rats, hidden inside a suitcase, and must collect as much cheese as possible before escaping on an outgoing flight!
+          </p>
         </section>
         <section>
           <div className="section-header">

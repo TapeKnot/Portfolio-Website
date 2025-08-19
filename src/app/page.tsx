@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image';
-import travellingWithTaste from '../../public/projects/travelling-with-taste.png'
-import bippits from '../../public/projects/bippits.png'
+import travellingWithTaste from '../../public/projects/travelling-with-taste/logo.png'
+import bippits from '../../public/projects/bippits/logo.png'
 import tables4u from '../../public/projects/tables4u.png'
 
 export default function Page() {
@@ -10,7 +10,7 @@ export default function Page() {
       <div className="section-header">
         <h1 className="text-align-center">Benjamin Levy</h1>
         <h2 className="text-align-center">Software Engineer & Game Programmer</h2>
-        <hr/>
+        <span/>
         <p className="text-align-center">
           Hi! Welcome to my website, created from scratch using React.<br/>
           Here, you can find some of the projects I have worked on as well as my resume.
@@ -61,7 +61,7 @@ export default function Page() {
             <p>Created a restaurant reservation website enabling customers to conveniently book tables anywhere at any time.</p>
           </div>
         </div>
-        <div className="button-container">
+        <div className="button-container margin-top-2em">
           <Link className="hyperlink-button-large" href="/projects">See More Projects!</Link>
         </div>
       </main>

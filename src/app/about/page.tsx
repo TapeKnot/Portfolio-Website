@@ -9,19 +9,19 @@ import cpp from '../../../public/skills-technologies/colored/cpp.svg'
 import cSharp from '../../../public/skills-technologies/colored/c-sharp.svg'
 import java from '../../../public/skills-technologies/colored/java.svg'
 import sql from '../../../public/skills-technologies/colored/sql.svg'
-import react from '../../../public/skills-technologies/colored/react.svg'
-import nodejs from '../../../public/skills-technologies/colored/nodejs.svg'
-import nextjs from '../../../public/skills-technologies/colored/nextjs.svg'
-import unreal from '../../../public/skills-technologies/colored/unreal-vertical.svg'
-import unity from '../../../public/skills-technologies/colored/unity.png'
-import godot from '../../../public/skills-technologies/colored/godot-vertical.svg'
+import react from '../../../public/skills-technologies/colored/react-horizontal.png'
+import nodejs from '../../../public/skills-technologies/colored/nodejs-horizontal-light.svg'
+import nextjs from '../../../public/skills-technologies/colored/nextjs-light.svg'
+import unreal from '../../../public/skills-technologies/colored/unreal-horizontal-light.svg'
+import unity from '../../../public/skills-technologies/colored/unity-light-cropped.svg'
+import godot from '../../../public/skills-technologies/colored/godot-light.svg'
 
 export default function Page() {
   return (
     <article>
       <div className="section-header">
         <h1 className="text-align-center">About Me</h1>
-        <hr/>
+        <span/>
       </div>
       <main>
         <section className="about-me-container">

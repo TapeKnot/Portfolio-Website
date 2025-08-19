@@ -3,6 +3,22 @@
         {
             "src": "https://www.youtube.com/embed/bVZZPUvZUv0",
             "alt": "Trailer"
+        },
+        {
+            "src": "/projects/travelling-with-taste/screenshot-1.png",
+            "alt": "Screenshot 1"
+        },
+        {
+            "src": "/projects/travelling-with-taste/screenshot-2.png",
+            "alt": "Screenshot 2"
+        },
+        {
+            "src": "/projects/travelling-with-taste/screenshot-3.png",
+            "alt": "Screenshot 3"
+        },
+        {
+            "src": "/projects/travelling-with-taste/screenshot-4.png",
+            "alt": "Screenshot 4"
         }
     ]
 }

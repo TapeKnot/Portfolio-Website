@@ -6,7 +6,7 @@ export default function Page() {
     <article>
       <div className="section-header">
         <h1 className="text-align-center">Tables4u</h1>
-        <hr/>
+        <span/>
         <p className="text-align-center">A convenient table reservation website.</p>
       </div>
       <main>
@@ -22,9 +22,14 @@ export default function Page() {
               <b>Tools: </b>React, Node.js, Next.js, Git<br/>
             </p>
           </div>
-          <div className="width-75">
-            <Slideshow data={slides}/>
-          </div>
+          <Slideshow data={slides}/>
+        </section>
+        <section>
+          <p>
+            Tables4u is a restaurant reservation website that streamlines the process of reserving restaurant tables.
+            Restaurant owners can create an account and add their restaurants to the website database, which can then be viewed by customers.
+            To reserve a table, customers simply search for a restaurant, find an open table at their desired time, and click the reserve button.
+          </p>
         </section>
       </main>
     </article>

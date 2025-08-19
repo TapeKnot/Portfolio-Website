@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from "next/image";
-import travellingWithTaste from '../../../public/projects/travelling-with-taste.png'
-import bippits from '../../../public/projects/bippits.png'
+import travellingWithTaste from '../../../public/projects/travelling-with-taste/logo.png'
+import bippits from '../../../public/projects/bippits/logo.png'
 import tables4u from '../../../public/projects/tables4u.png'
 import kookyKritters from '../../../public/projects/kooky-kritters/logo.png'
 import grabbyGremlins from '../../../public/projects/grabby-gremlins/logo.png'
@@ -11,7 +11,7 @@ export default function Page() {
     <div>
       <div className="section-header">
         <h1 className="text-align-center">Projects</h1>
-        <hr/>
+        <span/>
       </div>
       <main>
         <div className="project-card-container">
