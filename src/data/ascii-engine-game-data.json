@@ -3,6 +3,22 @@
         {
             "src": "https://www.youtube.com/embed/4ecdmT0jkfs",
             "alt": "Trailer"
+        },
+        {
+            "src": "/projects/bippits/screenshot-1.png",
+            "alt": "Screenshot 1"
+        },
+        {
+            "src": "/projects/bippits/screenshot-2.png",
+            "alt": "Screenshot 2"
+        },
+        {
+            "src": "/projects/bippits/screenshot-3.png",
+            "alt": "Screenshot 3"
+        },
+        {
+            "src": "/projects/bippits/screenshot-4.png",
+            "alt": "Screenshot 4"
         }
     ]
 }

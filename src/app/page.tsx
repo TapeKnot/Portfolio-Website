@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image';
-import travellingWithTaste from '../../public/projects/travelling-with-taste.png'
-import bippits from '../../public/projects/bippits.png'
+import travellingWithTaste from '../../public/projects/travelling-with-taste/logo.png'
+import bippits from '../../public/projects/bippits/logo.png'
 import tables4u from '../../public/projects/tables4u.png'
 
 export default function Page() {

@@ -24,7 +24,8 @@ export default function Page() {
               <b>Language: </b>Blueprints<br/>
               <b>Tools: </b>Unreal, Jira, Git<br/>
             </p>
-            <a className="hyperlink-button" href="https://ratgoosesuitstudios.github.io/" target="_blank">Game Website & Download</a>
+            <a className="hyperlink-button" href="https://codazen.itch.io/travelling-with-taste" target="_blank">View Game on itch.io</a>
+            <a className="hyperlink-button" href="https://ratgoosesuitstudios.github.io/" target="_blank">View Devlog Website</a>
           </div>
           <Slideshow data={slides}/>
         </section>
