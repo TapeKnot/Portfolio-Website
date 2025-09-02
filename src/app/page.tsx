@@ -12,8 +12,8 @@ export default function Page() {
         <h2 className="text-align-center">Software Engineer & Game Programmer</h2>
         <span/>
         <p className="text-align-center">
-          Hi! Welcome to my website, created from scratch using React.<br/>
-          Here, you can find some of the projects I have worked on as well as my resume.
+          Hi! I am Benjamin Levy, a programmer with a passion for game development.<br/>
+          In this website (created by me with React and Next.js), you can find some of the projects I have worked on.
         </p>
       </div>
       <main>
