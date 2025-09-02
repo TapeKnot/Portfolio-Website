@@ -28,13 +28,25 @@ export default function Page() {
           <div className="responsive-img-container">
             <Image className="profile-img" src={benjaminLevy} alt="benjamin-levy"/>
           </div>
-          <p className="about-me-text">
-            Hi there!
-            I am Benjamin Levy, a passionate software engineer and game programmer.
-            When I am not creating games, I like to play guitar, go on hikes, and collect video game memorabilia.
+          <div>
+            <p className="about-me-text">
+              Hi there! I am Benjamin Levy, a software engineer and game programmer.
+              I have been playing games for as long as I can remember, 
+              which has fueled my curiosity for how games are designed and the technology that powers them.
+            </p>
             <br/>
-            I am currently looking for work, so feel free to reach out if you are interested in working together.
-          </p>
+            <p className="about-me-text">
+              I am experienced in full-stack website development, allowing me to create websites like this one from scratch using React!
+            </p>
+            <br/>
+            <p className="about-me-text">
+              When I am not coding or working in game engines I like collecting video game memorabilia, going hiking, experimenting with amateur photography and playing guitar!
+            </p>
+            <br/>
+            <p className="about-me-text">
+              I am currently open to work opportunities in software engineering and game development. If you are interested in working with me, feel free to reach out using the contact form at the bottom of this page.
+            </p>
+          </div>
         </section>
         <section>
           <div className="section-header">

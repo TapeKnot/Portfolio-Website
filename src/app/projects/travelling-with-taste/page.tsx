@@ -24,15 +24,24 @@ export default function Page() {
               <b>Language: </b>Blueprints<br/>
               <b>Tools: </b>Unreal, Jira, Git<br/>
             </p>
-            <a className="hyperlink-button" href="https://codazen.itch.io/travelling-with-taste" target="_blank">View Game on itch.io</a>
-            <a className="hyperlink-button" href="https://ratgoosesuitstudios.github.io/" target="_blank">View Devlog Website</a>
+            <div className="button-container">
+              <a className="hyperlink-button" href="https://codazen.itch.io/travelling-with-taste" target="_blank">View Game on itch.io</a>
+              <a className="hyperlink-button" href="https://ratgoosesuitstudios.github.io/" target="_blank">View Devlog Website</a>
+            </div>
+            
           </div>
           <Slideshow data={slides}/>
         </section>
         <section>
           <p>
-            Travelling With Taste is a goofy stealth game about rats trying to steal from cheese-trafficking airport security.
-            Players take control of the rats, hidden inside a suitcase, and must collect as much cheese as possible before escaping on an outgoing flight!
+            <i>Travelling With Taste</i> is a stealth-platforming game for Windows.
+            Players control rats in a suitcase as they steal from cheese-trafficking airport security.
+            After infiltrating the airport’s backrooms, players must solve puzzles, sneak past guards, and collect as much cheese as possible before their escape flight leaves.
+            <br/><br/>
+            I served as lead AI programmer for the project in a team of 7 students.
+            Over the course of 8 weeks, we developed a polished gameplay experience.
+            My responsibilities included creating a complete enemy system capable of patrolling levels, detecting the player in their line of sight, and being distracted by items.
+            I also developed shaders and UI to stylize our game’s visuals and provide additional player feedback.
           </p>
         </section>
         <section>

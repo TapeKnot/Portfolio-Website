@@ -2,8 +2,8 @@
 import React, { useState } from 'react'
 import Image from "next/image";
 import "./slideshow.css";
-import slideArrowLeft from '../../../public/projects/slideshow/slideshow-left.png'
-import slideArrowRight from '../../../public/projects/slideshow/slideshow-right.png'
+import slideArrowLeft from '../../../public/projects/slideshow/slideshow-arrow-left.png'
+import slideArrowRight from '../../../public/projects/slideshow/slideshow-arrow-right.png'
 
 export const Slideshow = ({data}: any) => {
     const [currentIndex, setCurrentIndex] = useState(0);

@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@keyframes cross-fade {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
 .slideshow-outer-container {
   width: 45em;
   height: fit-content;
@@ -31,6 +36,8 @@
 }
 
 .slide-active {
+  animation-name: cross-fade;
+  animation-duration: 0.4s;
   object-fit: contain;
 }
 
