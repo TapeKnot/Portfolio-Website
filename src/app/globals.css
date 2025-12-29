@@ -121,9 +121,19 @@ ul {
   100% {transform: scale(1.05);}
 }
 
+@keyframes shrink-5-percent {
+  0% {transform: scale(1.05);}
+  100% {transform: scale(1);}
+}
+
 @keyframes grow-10-percent {
   0% {transform: scale(1);}
   100% {transform: scale(1.1);}
+}
+
+@keyframes shrink-10-percent {
+  0% {transform: scale(1.1);}
+  100% {transform: scale(1);}
 }
 
 /* ClassNames */
@@ -154,6 +164,20 @@ ul {
   margin-bottom: 1em;
 }
 
+.button {
+  animation-name: shrink-5-percent;
+  animation-duration: 0.2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+.button:hover {
+  animation-name: grow-5-percent;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
 /* Project Card */
 
 .project-card-container {
@@ -172,13 +196,6 @@ ul {
   padding: 0.5em;
   color: var(--dark-text);
   box-shadow: 0em 0.3em 1em #555;
-}
-
-.project-card:hover {
-  animation-name: grow-5-percent;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
 }
 
 .project-card .project-image {
@@ -226,40 +243,29 @@ ul {
   color: var(--light-text);
 }
 
-.tag-type {
+.tag {
   padding-left: 0.5em;
   padding-right: 0.5em;
   border-radius: 0.5em;
   width: fit-content;
+  white-space: pre;
+  background: #000000;
+}
+
+.tag.type {
   background: #C84B4B;
-  white-space: pre;
 }
 
-.tag-role {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  border-radius: 0.5em;
-  width: fit-content;
+.tag.role {
   background: #5EC737;
-  white-space: pre;
 }
 
-.tag-tool {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  border-radius: 0.5em;
-  width: fit-content;
+.tag.tool {
   background: #DF19E7;
-  white-space: pre;
 }
 
-.tag-language {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  border-radius: 0.5em;
-  width: fit-content;
+.tag.language {
   background: #5470DE;
-  white-space: pre;
 }
 
 /* About Me */
@@ -346,13 +352,6 @@ ul {
   color: var(--button-text);
 }
 
-.hyperlink-button:hover {
-  animation-name: grow-5-percent;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-}
-
 .hyperlink-button-large {
   font-size: 30px;
   padding: 0.5em;
@@ -364,13 +363,6 @@ ul {
   text-align: center;
   box-shadow: 0em 0.3em 0.5em #555;
   color: var(--button-text);
-}
-
-.hyperlink-button-large:hover {
-  animation-name: grow-5-percent;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
 }
 
 .text-align-center {
