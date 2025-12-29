@@ -8,7 +8,7 @@ export default function Footer() {
       <br/>
       <ContactForm/>
       <br/>
-      <p className="text-align-center">© 2025 Benjamin Levy</p>
+      <p className="text-align-center">© {new Date().getUTCFullYear()} Benjamin Levy</p>
       <br/>
       <div className="social-link-container">
         <a href="/Benjamin-Levy-Resume.pdf" target="_blank"><Image className="social-link" src='/social-icons/resume-logo.png' alt="resume" width={50} height={50}/></a>

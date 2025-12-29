@@ -81,9 +81,9 @@ export default function Page() {
             <hr/>
           </div>
           <div className="button-container">
-            <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" download>Download</a>
-            <a className="hyperlink-button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Open in New Tab</a>
-            <a className="hyperlink-button" type="application/pdf" href="https://www.linkedin.com/in/levybe/" target="_blank">LinkedIn</a>
+            <a className="hyperlink-button button" href="/Benjamin-Levy-Resume.pdf" download>Download</a>
+            <a className="hyperlink-button button" href="/Benjamin-Levy-Resume.pdf" target="_blank">Open in New Tab</a>
+            <a className="hyperlink-button button" type="application/pdf" href="https://www.linkedin.com/in/levybe/" target="_blank">LinkedIn</a>
           </div>
           <embed className="margin-auto" src="Benjamin-Levy-Resume.pdf" width="100%" height="1150em"/>
         </section>

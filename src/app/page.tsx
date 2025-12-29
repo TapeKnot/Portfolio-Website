@@ -13,56 +13,56 @@ export default function Page() {
         <span/>
         <p className="text-align-center">
           Hi! I am Benjamin Levy, a programmer with a passion for game development.<br/>
-          In this website (created by me with React and Next.js), you can find some of the projects I have worked on.
+          In this website (created by me with React and Next.js), you can find some of the projects upon which I have worked.
         </p>
       </div>
       <main>
         <div className="project-card-container">
-          <div className="project-card">
-            <Link href="/projects/travelling-with-taste">
-              <Image className="project-image" src={travellingWithTaste} alt="travelling-with-taste"/>
-            </Link>
-            <div className="tag-container">
-                <div className="tag-type">Game</div>
-                <div className="tag-role">Programming</div>
-                <div className="tag-role">Design</div>
-                <div className="tag-role">Tech. Art</div>
-                <div className="tag-tool">Unreal</div>
-                <div className="tag-tool">Jira</div>
-                <div className="tag-language">Blueprints</div>
-            </div>
-            <p>Developed a 3D goofy stealth game about rats stealing from cheese-trafficking airport security.</p>
-          </div>
-          <div className="project-card">
-            <Link href="/projects/ascii-engine-game">
-              <Image className="project-image" src={bippits} alt="bippits"/>
-            </Link>
-            <div className="tag-container">
-                <div className="tag-type">Game</div>
-                <div className="tag-type">Engine</div>
-                <div className="tag-role">Programming</div>
-                <div className="tag-language">C++</div>
-            </div>
-            <p>Recreated the ASCII art game engine Dragonfly and developed a tricky block-stacking game with the engine.</p>
-          </div>
-          <div className="project-card">
+          <div className="project-card button">
             <Link href="/projects/tables4u">
               <Image className="project-image" src={tables4u} alt="tables4u"/>
             </Link>
             <div className="tag-container">
-                <div className="tag-type">Website</div>
-                <div className="tag-role">Programming</div>
-                <div className="tag-role">Databases</div>
-                <div className="tag-tool">React</div>
-                <div className="tag-tool">AWS</div>
-                <div className="tag-language">Javascript</div>
-                <div className="tag-language">HTML</div>
+                <div className="tag type">Website</div>
+                <div className="tag role">Programming</div>
+                <div className="tag role">Databases</div>
+                <div className="tag tool">React</div>
+                <div className="tag tool">AWS</div>
+                <div className="tag language">Javascript</div>
+                <div className="tag language">HTML</div>
             </div>
             <p>Created a restaurant reservation website enabling customers to conveniently book tables anywhere at any time.</p>
           </div>
+          <div className="project-card button">
+            <Link href="/projects/travelling-with-taste">
+              <Image className="project-image" src={travellingWithTaste} alt="travelling-with-taste"/>
+            </Link>
+            <div className="tag-container">
+                <div className="tag type">Game</div>
+                <div className="tag role">Programming</div>
+                <div className="tag role">Design</div>
+                <div className="tag role">Tech. Art</div>
+                <div className="tag tool">Unreal</div>
+                <div className="tag tool">Jira</div>
+                <div className="tag language">Blueprints</div>
+            </div>
+            <p>Developed a 3D goofy stealth game about rats stealing from cheese-trafficking airport security.</p>
+          </div>
+          <div className="project-card button">
+            <Link href="/projects/ascii-engine-game">
+              <Image className="project-image" src={bippits} alt="bippits"/>
+            </Link>
+            <div className="tag-container">
+                <div className="tag type">Game</div>
+                <div className="tag type">Engine</div>
+                <div className="tag role">Programming</div>
+                <div className="tag language">C++</div>
+            </div>
+            <p>Recreated the ASCII art game engine Dragonfly and developed a tricky block-stacking game with the engine.</p>
+          </div>
         </div>
         <div className="button-container margin-top-2em">
-          <Link className="hyperlink-button-large" href="/projects">See More Projects!</Link>
+          <Link className="hyperlink-button-large button" href="/projects">See More Projects!</Link>
         </div>
       </main>
     </div>
