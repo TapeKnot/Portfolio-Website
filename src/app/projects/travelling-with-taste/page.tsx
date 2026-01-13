@@ -15,7 +15,7 @@ export default function Page() {
             <p>
               <b>Type: </b>PC Game (Windows)<br/>
               <b>Genre: </b>Stealth Platformer<br/>
-              <b>Release Date: </b>TBD<br/>
+              <b>Release Date: </b>August 2025<br/>
               <b>Awards: </b>Featured at PAX East 2025<br/>
               <b>Project Status: </b>Live Development<br/>
               <b>Duration: </b>2 Months<br/>
