@@ -2,7 +2,7 @@ This is my portfolio website, created using Next.js.
 
 ## View Online
 
-My website is currently hosted on Vercel and can be found at [benjaminlevy.dev](benjaminlevy.dev).
+My website is currently hosted on Vercel and can be found at [http://benjaminlevy.dev](http://benjaminlevy.dev).
 
 ## Download & Install
 
